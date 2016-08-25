@@ -4,7 +4,8 @@
     
     
   // Stick menu
-  $(".menu").sticky({topSpacing:0});
+  $(".sticky").sticky({topSpacing:0});
+  $(".menu-media").sticky({topSpacking:0});
 
 
 
