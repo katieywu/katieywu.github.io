@@ -19,36 +19,35 @@
       if (item.length) { return item; }
     });
 
-   $('a[href*=]').bind('click', function(e) {
+   $('a[href*=#]').bind('click', function(e) {
 	e.preventDefault();
        
 	var target = $(this).attr("href");
 			
-       console.log("target "+ target);
-//	$('html, body').stop().animate({ scrollTop: $(target).offset().top-60 }, 1000, function() {
-//
-//	});
+
+	$('html, body').stop().animate({ scrollTop: $(target).offset().top-140 }, 1000, function() {
+
+	});
 			
 	return false;
    });
 
   $(window).scroll(function(){
-//   var fromTop = $(this).scrollTop()+topMenuHeight;
-//   var cur = scrollItems.map(function(){
-//     if ($(this).offset().top < fromTop)
-//       return this;
-//   });
-//
-//   cur = cur[cur.length-1];
-//   var id = cur && cur.length ? cur[0].id : "";
-//   console.log("id " + id);
-      
+   var fromTop = $(this).scrollTop()+topMenuHeight;
+   var cur = scrollItems.map(function(){
+     if ($(this).offset().top < fromTop)
+       return this;
+   });
+
+   cur = cur[cur.length-1];
+   var id = cur && cur.length ? cur[0].id : "";
+   
+      //unclear what this does someone help/
 //   if (lastId !== id) {
 //       lastId = id;
 //       menuItems
 //         .parent().removeClass("active")
 //         .end().filter("[href=#"+id+"]").parent().addClass("active");
-//       console.log("HIHDIFHHJDFHDFJH");
 //   }                   
   });  
   

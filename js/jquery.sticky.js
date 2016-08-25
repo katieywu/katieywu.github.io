@@ -68,6 +68,10 @@
     },
     resizer = function() {
       windowHeight = $window.height();
+//        if ($window.width() <= 767) {
+//            $( ".sticky-wrapper" ).css("height", "0px");
+//        }
+//        console.log("width: " + $window.width());
     },
     methods = {
       init: function(options) {
@@ -90,7 +94,7 @@
           }
 
           var stickyWrapper = stickyElement.parent();
-          stickyWrapper.css('height', stickyElement.outerHeight());
+//          stickyWrapper.css('height', stickyElement.outerHeight());
           sticked.push({
             topSpacing: o.topSpacing,
             bottomSpacing: o.bottomSpacing,
