@@ -7,7 +7,7 @@
     
     <title>Katie Wu</title>
     
-    <meta name="description" content="Free download theme onepage, clean and modern responsive for all"/>
+    <meta name="description" content="Katie Wu's website"/>
     <meta name="keywords" content="katie wu, website, engineer, software developer, designer, design, programmer, coding, computer graphics, artist, university of pennsylvania, apple, ux designer, ui designer, ux/ui, game technology, games, graphics, cg, c++, java, sketch.app, unity"/>
     <meta name="author" content="Katie Wu"/>
 
@@ -19,14 +19,47 @@
     
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
-<!--    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">-->
-<!--    <script src="https://use.fontawesome.com/d591ceaaa4.js"></script>-->
 </head>
     
 <body>
 <div class="container">
-    <section class="start-page parallax background" id="home">
-        <div class="opacity"></div>  <!--Opacity color -->
+
+    <!-- section menu mobile -->
+    <section class="menu-media">
+
+    <div class="menu-content">
+      <div class="logo">Katie Wu</div>
+
+      <div class="icon"><a href="#"><img src="img/icons/menu-media.png"/></a></div>
+    </div>
+
+    </section>
+
+    <ul class="menu-click">
+        <a href="#home"><li href="#home">HOME</li></a>
+        <a href="#about-me"><li href="#about-me">ABOUT</li></a>
+        <a href="#portfolio"><li href="#portfolio">PORTFOLIO</li></a>
+        <a href="#contact"><li href="#contact">CONTACT</li></a>
+    </ul>
+    
+    <!--section menu-->
+    <section class="menu">
+    
+        <div class="menu-content">
+        <div class="logo">Katie Wu</div>
+        
+            <ul id="menu">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about-me">ABOUT</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </section>
+    
+    <section class="start-page background" id="home">
+        
+        <div class="opacity"></div>
         <div class="content">
             <div class="text">
 
@@ -36,16 +69,79 @@
               <p>Testy testy cheeseburgers</p>
 
 <!--              <a href="#about-me"><div class="read-more">Read more</div></a>-->
-
             </div>
-            <a class="arrow-down" href="#about-me"><i class="fa fa-chevron-down fa-3x" aria-hidden="true" style="display: flex;
-    align-items: center;
-    justify-content: center; width:inherit; height:inherit;"></i></a>
+            
+            <a class="arrow-down" href="#about-me"><i class="fa fa-chevron-down" aria-hidden="true" style="display: flex; align-items: center; justify-content: center; width:inherit; height:inherit;"></i></a>
             
         </div>    
     </section>
     
-    
+      <!-- section about us -->
+  
+    <section class="about-me" id="about-me">
+
+      <div class="content">
+
+        <h1>ABOUT</h1>
+        <hr/>
+        <p class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+
+          <div class="column-one">
+
+            <div class="circle-one"></div>
+
+              <h2>RESPONSIVE</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+
+          </div>
+
+          <div class="column-two">
+
+            <div class="circle-two"></div>
+
+              <h2>MINIMALIST</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+
+          </div>
+
+
+          <div class="column-three">
+
+            <div class="circle-three"></div>
+
+            <h2>FREEBIES</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+
+        </div>  
+
+      </div>
+
+  </section>
 </div>
+    
+	<!-- Scripts -->
+	
+	<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<script src="js/jquery-ui-1.10.4.min.js" type="text/javascript"></script> <!-- jQuery -->
+	<script src="js/jquery.sticky.js"></script> <!-- jQuery Stick Menu -->
+	<script src="js/masonry.pkgd.min.js"></script> <!-- All script -->
+	<script src="js/imagesloaded.pkgd.min.js"></script> <!-- All script -->	
+
+   <script>
+     $(function(){
+   
+       var $container = $('.grid');
+     
+       $container.imagesLoaded( function(){
+         $container.masonry({
+           itemSelector : 'li'
+         });
+       });
+     
+     });
+   </script>
+<!--	<script src="js/jquery.parallax.js"></script>  jQuery Parallax 	-->
+	<script src="js/script.js"></script> <!-- All script -->
+    
 </body>
 </html>

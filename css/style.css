@@ -11,12 +11,6 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,300,100,700,900&subset=latin,latin-ext);
 
 
-/*
- * Theme Name: Onepage
- * Author: Thomsoon
- * Created: 14/11/2014
- */
-
 
 .preloader{
   position:fixed;
@@ -76,12 +70,12 @@ h1 span{
 
 
 ::selection {
-  background: #ada074;
+  background: #ef116f;
   color:white;
 }
 
 ::-moz-selection {
-  background: #ada074;
+  background: #ef116f;
   color:white;
 }
 
@@ -178,12 +172,12 @@ h1 span{
 
 .start-page .content .text .read-more:hover{
   color:white;
-  background: #ada074;
-  border:1px solid #ada074;
+  background: #ef116f;
+  border:1px solid #ef116f;
 }
 
 .start-page .content .arrow-down {
-font-size: 10pt;
+font-size: 22pt;
   position: absolute;
   bottom: 50px;
   left: 50%;
@@ -230,15 +224,19 @@ font-size: 10pt;
   position:relative;
   width:100%;
   height:90px;
-  background:#ada074;
+  background:#ef116f;
   z-index:1000;
   display:none;
 }
 
 .menu-media .menu-content{
   width:280px;
-  position:relative;
-  margin:0 auto;
+  height: inherit;
+/*  position:relative;*/
+/*  margin:0 auto;*/
+  display: flex;
+  align-items: center; 
+  justify-content: center;
 }
 
 .menu-media .menu-content .logo {
@@ -281,7 +279,7 @@ font-size: 10pt;
  }
 
 .menu-click li:hover {
-  color:#ada074;
+  color:#ef116f;
  }
 
 
@@ -292,7 +290,7 @@ font-size: 10pt;
   width:100%;
   height:60px;
   background:white;
-  border-bottom:1px solid #f2f2f2;
+/*  border-bottom:1px solid #f2f2f2;*/
   z-index:1000;
 }
 
@@ -340,11 +338,11 @@ font-size: 10pt;
 }
 
 .menu-content li.active a{
-  color:#ada074;
+  color:#ef116f;
 }
 
 .menu-content li a:hover{
-  color:#ada074;
+  color:#ef116f;
 }
 
 
@@ -448,7 +446,7 @@ font-size: 10pt;
 }
 
 .about-me .column-one .circle-one:hover{
-  border:2px solid #ada074;
+  border:2px solid #ef116f;
 
 }
 
@@ -479,7 +477,7 @@ font-size: 10pt;
 }
 
 .about-me .column-two .circle-two:hover{
-  border:2px solid #ada074;
+  border:2px solid #ef116f;
 }
 
 
@@ -510,7 +508,7 @@ font-size: 10pt;
 }
 
 .about-me .column-three .circle-three:hover{ 
-  border:2px solid #ada074;
+  border:2px solid #ef116f;
 }
 
 
@@ -555,9 +553,9 @@ font-size: 10pt;
 }
 
 .portfolio .portfolio-margin .read-more:hover{
-  background:#ada074;
+  background:#ef116f;
   color:white;
-  border:1px solid #ada074;
+  border:1px solid #ef116f;
 }
 
 .portfolio .portfolio-margin h1{
@@ -918,7 +916,7 @@ input.submit{
 }
 
 .footer .menu-footer a:hover{
-  color:#ada074;
+  color:#ef116f;
 }
 
 
