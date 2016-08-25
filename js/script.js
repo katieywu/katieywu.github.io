@@ -5,9 +5,9 @@
     
   // Stick menu
   $(".sticky").sticky({topSpacing:0});
-  $(".menu-media").sticky({topSpacking:0});
+  $(".menu-media").sticky({topSpacing:0});
 
-
+$(".start-page .content").height($(window).height() - $(".menu").height()); 
 
 
   // Menu Scroll to content and Active menu

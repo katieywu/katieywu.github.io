@@ -68,6 +68,7 @@
     },
     resizer = function() {
       windowHeight = $window.height();
+      $(".start-page .content").height($(window).height() - $(".menu").height()); 
 //        if ($window.width() <= 767) {
 //            $( ".sticky-wrapper" ).css("height", "0px");
 //        }
