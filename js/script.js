@@ -9,6 +9,12 @@
 
 $(".start-page .content").height($(window).height() - $(".menu").height()); 
 
+//$('.svg-inject').svgInject(function(){
+//    
+//});
+var mySVGsToInject = document.querySelectorAll('img.svg-inject');
+
+SVGInjector(mySVGsToInject);
 
   // Menu Scroll to content and Active menu
   var lastId,
