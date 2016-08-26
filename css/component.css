@@ -36,6 +36,8 @@
 }
 
 .og-expander {
+/*    display: table;*/
+    overflow: auto;
 	position: absolute;
 	background: #ddd;
 	top: auto;
@@ -48,6 +50,8 @@
 }
 
 .og-expander-inner {
+/*    display: table-row;*/
+    overflow:auto;
 	padding: 50px 30px;
 	height: 100%;
 }
@@ -87,7 +91,7 @@
 
 .og-fullimg,
 .og-details {
-	width: 50%;
+	width: 100%;
 	float: left;
 	height: 100%;
 	overflow: hidden;
@@ -122,6 +126,7 @@
 	color: #999;
 }
 
+/*
 .og-details a {
 	font-weight: 700;
 	font-size: 16px;
@@ -145,6 +150,7 @@
 	border-color: #999;
 	color: #999;
 }
+*/
 
 .og-loading {
 	width: 20px;

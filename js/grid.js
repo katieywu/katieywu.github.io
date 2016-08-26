@@ -161,6 +161,12 @@ $.fn.imagesLoaded = function( callback ) {
 	return deferred ? deferred.promise( $this ) : $this;
 };
 
+//load the grid posts-----------//
+$(function(){
+ $("#post1").load("post1.html"); 
+});
+//------------------------------//
+
 var Grid = (function() {
 
 		// list of items
@@ -293,7 +299,6 @@ var Grid = (function() {
 		var preview = $.data( this, 'preview' ),
 			// item´s offset top
 			position = $item.data( 'offsetTop' );
-
 		scrollExtra = 0;
 
 		// if a preview exists and previewPos is different (different row) from item´s top then close it
@@ -344,7 +349,7 @@ var Grid = (function() {
 			// create Preview structure:
 			this.$title = $( '<h3></h3>' );
 			this.$description = $( '<p></p>' );
-			this.$href = $( '<a href="#">Visit website</a>' );
+//			this.$href = $( '<a href="#">Visit website</a>' );
 			this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$description, this.$href );
 			this.$loading = $( '<div class="og-loading"></div>' );
 			this.$fullimage = $( '<div class="og-fullimg"></div>' ).append( this.$loading );
@@ -379,7 +384,7 @@ var Grid = (function() {
 			// update preview´s content
 			var $itemEl = this.$item.children( 'a' ),
 				eldata = {
-					href : $itemEl.attr( 'href' ),
+//					href : $itemEl.attr( 'href' ),
 					largesrc : $itemEl.data( 'largesrc' ),
 					title : $itemEl.data( 'title' ),
 					description : $itemEl.data( 'description' )
@@ -387,7 +392,7 @@ var Grid = (function() {
 
 			this.$title.html( eldata.title );
 			this.$description.html( eldata.description );
-			this.$href.attr( 'href', eldata.href );
+//			this.$href.attr( 'href', eldata.href );
 
 			var self = this;
 			
