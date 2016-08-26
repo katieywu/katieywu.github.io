@@ -50,12 +50,13 @@ SVGInjector(mySVGsToInject);
    var id = cur && cur.length ? cur[0].id : "";
    
       //unclear what this does someone help/
-//   if (lastId !== id) {
-//       lastId = id;
-//       menuItems
-//         .parent().removeClass("active")
-//         .end().filter("[href=#"+id+"]").parent().addClass("active");
-//   }                   
+      //figured it out: changes the menu to the active item
+   if (lastId !== id) {
+       lastId = id;
+       menuItems
+         .parent().removeClass("active")
+         .end().filter("[href=#"+id+"]").parent().addClass("active");
+   }                   
   });  
   
 
