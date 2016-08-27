@@ -277,7 +277,7 @@ var Grid = (function() {
 	}
 
 	function initItemsEvents( $items ) {
-		$items.on( 'click', 'span.og-close', function() {
+		$items.on( 'click', 'div.og-close', function() {
 			hidePreview();
 			return false;
 		} ).children( 'a' ).on( 'click', function(e) {
@@ -353,8 +353,10 @@ var Grid = (function() {
 			this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$description, this.$href );
 			this.$loading = $( '<div class="og-loading"></div>' );
 			this.$fullimage = $( '<div class="og-fullimg"></div>' ).append( this.$loading );
-			this.$closePreview = $( '<span class="og-close"></span>' );
+			this.$closePreview = $( '<div class="og-close"></div>' );
 			this.$previewInner = $( '<div class="og-expander-inner"></div>' ).append( this.$closePreview, this.$fullimage, this.$details );
+//            this.$previewInner.css("height", )
+                                   
 			this.$previewEl = $( '<div class="og-expander"></div>' ).append( this.$previewInner );
 			// append preview element to the item
 			this.$item.append( this.getEl() );
@@ -458,18 +460,16 @@ var Grid = (function() {
 
 		},
 		calcHeight : function() {
-
-			var heightPreview = winsize.height - this.$item.data( 'height' ) - marginExpanded,
-				itemHeight = winsize.height;
-
-			if( heightPreview < settings.minHeight ) {
-				heightPreview = settings.minHeight;
-				itemHeight = settings.minHeight + this.$item.data( 'height' ) + marginExpanded;
-			}
-
+            
+            var heightPreview = this.getEl().height();
+            var itemHeight = heightPreview + this.$item.data( 'height' ) + marginExpanded;
+            
 			this.height = heightPreview;
 			this.itemHeight = itemHeight;
 
+//            console.log("this.height: " + this.height);
+//            console.log("this.itemHeight " + this.itemHeight);
+            
 		},
 		setHeights : function() {
 
@@ -482,9 +482,20 @@ var Grid = (function() {
 				};
 
 			this.calcHeight();
+            
+//            var hi1 = this.getEl().height();
+//            var h2 = hi1 + this.$item.data( 'height' ) + 100;
+            
+//            console.log("hi1: " + hi1);
+            
+            //the $previewEl.css is the gray box
 			this.$previewEl.css( 'height', this.height );
+            
+    
+            //the $item is the whatever the user clicked, so we expand the height so that the rest of the tiles fall into place
 			this.$item.css( 'height', this.itemHeight ).on( transEndEventName, onEndFn );
 
+            
 			if( !support ) {
 				onEndFn.call();
 			}
