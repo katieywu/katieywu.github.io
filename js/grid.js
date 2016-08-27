@@ -467,8 +467,8 @@ var Grid = (function() {
 			this.height = heightPreview;
 			this.itemHeight = itemHeight;
 
-//            console.log("this.height: " + this.height);
-//            console.log("this.itemHeight " + this.itemHeight);
+            console.log("this.height: " + this.height);
+            console.log("this.itemHeight " + this.itemHeight);
             
 		},
 		setHeights : function() {
