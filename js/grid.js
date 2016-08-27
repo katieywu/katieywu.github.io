@@ -377,7 +377,7 @@ var Grid = (function() {
 				$currentItem.removeClass( 'og-expanded' );
 				this.$item.addClass( 'og-expanded' );
 				// position the preview correctly
-				this.positionPreview();
+//				this.positionPreview();
 			}
 
 			// update current value
@@ -425,7 +425,7 @@ var Grid = (function() {
 				// set the height for the preview and the item
 				this.setHeights();
 				// scroll to position the preview in the right place
-				this.positionPreview();
+//				this.positionPreview();
 			}, this ), 25 );
 
 		},
