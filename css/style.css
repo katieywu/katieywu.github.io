@@ -134,8 +134,8 @@ h1 span {
     height: 520px;
 }
 .start-page .content .text .logo img {
-    
-    max-width: 100px;
+    opacity: 0.8;
+    max-width: 110px;
     height: auto;
     width: auto\9;
     margin: 50px auto 50px;
@@ -522,8 +522,8 @@ h1 span {
     z-index: 10;
 }
 .portfolio .portfolio-margin {
-    position: relative;
-    width: 900px;
+/*    position: relative;*/
+/*    width: 900px;*/
     overflow: hidden;
     margin: 0 auto;
 }
@@ -659,7 +659,6 @@ html { height: 100%; }
 	padding: 0;
 /*	margin: 0;*/
 }
-
 
 .main > p {
 	text-align: center;

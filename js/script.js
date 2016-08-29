@@ -45,8 +45,8 @@ SVGInjector(mySVGsToInject);
    cur = cur[cur.length-1];
    var id = cur && cur.length ? cur[0].id : "";
    
-      //unclear what this does someone help/
-      //figured it out: changes the menu to the active item
+  //unclear what this does someone help/
+  //figured it out: changes the menu to the active item
    if (lastId !== id) {
        lastId = id;
        menuItems
