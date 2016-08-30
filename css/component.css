@@ -11,9 +11,10 @@
 	margin: 10px 5px 0 5px;
 	vertical-align: top;
 	height: 250px;
+
 }
 
-.og-grid li > a:not(.text),
+.og-grid li > a,
 .og-grid li > a img {
 	border: none;
 	outline: none;
@@ -21,8 +22,13 @@
 	position: relative;
 }
 
-.og-grid li > a > .text:hover {
-    opacity: 1;
+.og-grid li > a:hover {
+        -webkit-transition: all 0.6s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+    opacity: 0.5;
 }
 
 .og-grid li.og-expanded > a::after {
@@ -147,9 +153,14 @@
 }
 
 .og-grid li > .text {
-    position: absolute;
+    position: absolute !important;
+    margin: 0 auto !important;
+
     width: auto;
     height: auto;
+
+/*    top: 250;*/
+    
     background: rgba(0,0,0, 0.3);
     z-index: 2;
     opacity: 0;
