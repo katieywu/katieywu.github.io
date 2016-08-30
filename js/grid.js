@@ -463,7 +463,7 @@ var Grid = (function() {
                    
                    $('.gridExtender').css('height', 'auto');
                    $('.gridExtender').removeClass('gridExtender');
-					self.$previewEl.remove();
+				    self.$previewEl.remove();
 				};
 
 //			setTimeout( $.proxy( function() {
@@ -471,17 +471,19 @@ var Grid = (function() {
 //				if( typeof this.$largeImg !== 'undefined' ) {
 //					this.$largeImg.fadeOut( 'fast' );
 //				}
+                
+//                this.$previewEl.children('img').fadeOut('fast');
+                onEndFn.call();
+
 				this.$previewEl.css( 'height', 0 );
 				// the current expanded item (might be different from this.$item)
 				var $expandedItem = $items.eq( this.expandedIdx );
 				$expandedItem.css( 'height', $expandedItem.data( 'height' ) ).on( transEndEventName, onEndFn );
 				
             
-            onEndFn.call();
-
-//				if( !support ) {
-//					onEndFn.call();
-//				}
+				if( !support ) {
+					onEndFn.call();
+				}
 
 //			}, this ), 25 );
 			
@@ -491,12 +493,12 @@ var Grid = (function() {
 
         calcHeight : function() {
             this.getEl().css( 'height', 'auto' );
-            console.log("el height auto:"+this.getEl().height());
+//            console.log("el height auto:"+this.getEl().height());
             
             var heightPreview = this.getEl().height();
             var itemHeight = heightPreview + this.$item.data( 'height' ) + marginExpanded;
             
-            console.log("gridExtender height "+$('.gridExtender').css('height'));
+//            console.log("gridExtender height "+$('.gridExtender').css('height'));
             $('.gridExtender').css('height', itemHeight);
             
             this.height = heightPreview;
