@@ -187,10 +187,10 @@ h1 span {
     -o-animation: fade 1.4s ease-in-out infinite;
     animation: fade 1.4s ease-in-out infinite;*/
     
-      -webkit-animation: bounce-fade 1.2s infinite; /* Safari 4+ */
-  -moz-animation:    bounce-fade 1.2s infinite; /* Fx 5+ */
-  -o-animation:      bounce-fade 1.2s infinite; /* Opera 12+ */
-   animation:        bounce-fade 1.2s infinite; /* IE 10+ */
+      -webkit-animation: bounce-fade 1.4s infinite; /* Safari 4+ */
+  -moz-animation:    bounce-fade 1.4s infinite; /* Fx 5+ */
+  -o-animation:      bounce-fade 1.4s infinite; /* Opera 12+ */
+   animation:        bounce-fade 1.4s infinite; /* IE 10+ */
 }
 
 
@@ -211,53 +211,6 @@ h1 span {
         100% { opacity: 1; bottom: 5%; }
     }
 
-/*
-@-webkit-keyframes fade {
-    0% {
-        opacity: 0.5
-    }
-    50% {
-        opacity: 1.0
-    }
-    100% {
-        opacity: 0.5
-    }
-}
-@-moz-keyframes fade {
-    0% {
-        opacity: 0.5
-    }
-    50% {
-        opacity: 1.0
-    }
-    100% {
-        opacity: 0.5
-    }
-}
-@-o-keyframes fade {
-    0% {
-        opacity: 0.5
-    }
-    50% {
-        opacity: 1.0
-    }
-    100% {
-        opacity: 0.5
-    }
-}
-@keyframes fade {
-    0% {
-        opacity: 0.5
-    }
-    50% {
-        opacity: 1.0
-    }
-    100% {
-        opacity: 0.5
-    }
-}
-*/
-
 /* Menu mobile */
 
 .menu-media {
@@ -274,7 +227,6 @@ h1 span {
     height: inherit;
     margin:0 auto;
     display: flex;
-/*    vertical-align: middle;*/
     align-items: center;
 /*    justify-content: center;*/
 }
@@ -473,6 +425,16 @@ h1 span {
     position: relative;
     font-weight: 300;
 }
+
+.about-me .content .clip-path, .about-me .content img {
+    display: block;
+    margin: 54 auto 0;
+    width: 240px;
+    text-align: center;
+/*    -webkit-clip-path: circle(100px at center); */
+/*    clip-path: circle(100px at center);*/
+}
+
 .about-me .column-one {
     margin-top: 40px;
     width: 300px;
@@ -571,10 +533,11 @@ h1 span {
     margin: 0 auto;
 }
 .portfolio .portfolio-margin .read-more, .about-me .read-more {
+    
     width: 183px;
     height: 47px;
     position: relative;
-    margin: 50px auto 100px;
+    margin: 50px auto 0 auto;
     line-height: 47px;
     border: 1px solid #333333;
     text-transform: uppercase;
