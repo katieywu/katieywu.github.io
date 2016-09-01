@@ -268,7 +268,7 @@ textarea{
   width:700px;
 }
 
-.about-me p{
+.about-me p:not(.title){
   width:200px;
 }
 

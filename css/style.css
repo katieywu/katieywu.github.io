@@ -48,6 +48,7 @@ a {
     text-decoration: none;
     outline: none;
     font-size: 14px;
+    
 }
 h1 {
     font-family: 'Josefin Sans', sans-serif;
@@ -385,7 +386,8 @@ h1 span {
 }
 
 .about-me .content.active {
-    overflow: auto;
+    height: auto;
+/*    overflow: auto;*/
 }
 .about-me h1 {
 /*    font-family: 'Lato', sans-serif;*/
@@ -409,12 +411,20 @@ h1 span {
 .about-me p.title {
     color: #a4a4a4;
     margin: 40px auto;
-    width: 300px;
+    width: 60%;
     line-height: 26px;
     letter-spacing: 1;
     font-size: 14px;
     font-weight: 300;
     text-align: center;
+}
+
+.about-me a {
+    color: #ef116f;
+}
+
+.about-me a:hover {
+    text-decoration: underline;
 }
 .about-me h2 {
     text-align: center;
@@ -428,6 +438,7 @@ h1 span {
     font-weight: 400;
 }
 .about-me p {
+    height: auto;
     text-align: center;
     font-size: 14px;
     width: 250px;
@@ -442,8 +453,9 @@ h1 span {
     margin-top: 40px;
     width: 300px;
     float: left;
+/*    height: auto;*/
 /*    margin-bottom: 70px;*/
-    height: 350px;
+/*    height: 350px;*/
 }
 .about-me .column-one .circle-one {
     height: 100px;
@@ -470,7 +482,7 @@ h1 span {
     width: 300px;
     float: left;
 /*    margin-bottom: 70px;*/
-    height: 350px;
+/*    height: 350px;*/
 }
 .about-me .column-two .circle-two {
     height: 100px;
@@ -497,7 +509,7 @@ h1 span {
     width: 300px;
     float: left;
 /*    margin-bottom: 70px;*/
-    height: 350px;
+/*    height: 350px;*/
 }
 .about-me .column-three .circle-three {
     height: 100px;
