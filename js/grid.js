@@ -388,10 +388,11 @@ var Grid = (function() {
             //NEW CODE-------//
             //load the html and update heights using calcHeight()
             var previewSelf = this;
+            console.log(this.$post.id);
             this.$post.load("post"+current+".html", function() {
-                console.log("shouldve loaded");
+//                console.log("shouldve loaded");
                 previewSelf.$post.imagesLoaded(function() {
-                    console.log("REALLY HSOULDVE loaded");
+//                    console.log("REALLY HSOULDVE loaded");
                     previewSelf.calcHeight();
 
                 });
@@ -459,7 +460,7 @@ var Grid = (function() {
 						$( this ).off( transEndEventName );
 					}
 					self.$item.removeClass( 'og-expanded' );
-                   console.log("close called");
+//                   console.log("close called");
                    
                    $('.gridExtender').css('height', 'auto');
                    $('.gridExtender').removeClass('gridExtender');
