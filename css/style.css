@@ -179,16 +179,39 @@ h1 span {
   background: url(../img/arrow-down.png) no-repeat center center;
   background-size: contain;
 */
+    /*
     display: block;
     -webkit-animation: fade 1.4s ease-in-out infinite;
-    /* Safari 4+ */
+    
     -moz-animation: fade 1.4s ease-in-out infinite;
-    /* Fx 5+ */
     -o-animation: fade 1.4s ease-in-out infinite;
-    /* Opera 12+ */
-    animation: fade 1.4s ease-in-out infinite;
-    /* IE 10+ */
+    animation: fade 1.4s ease-in-out infinite;*/
+    
+      -webkit-animation: bounce-fade 1.2s infinite; /* Safari 4+ */
+  -moz-animation:    bounce-fade 1.2s infinite; /* Fx 5+ */
+  -o-animation:      bounce-fade 1.2s infinite; /* Opera 12+ */
+   animation:        bounce-fade 1.2s infinite; /* IE 10+ */
 }
+
+
+    @-webkit-keyframes bounce-fade {
+        0%   { opacity: 0; bottom: 10%; }
+        100% { opacity: 1; bottom: 5%; }
+    }
+    @-moz-keyframes bounce-fade {
+        0%   { opacity: 0; bottom: 10%; }
+        100% { opacity: 1; bottom: 5%; }
+    }
+    @-o-keyframes bounce-fade {
+        0%   { opacity: 0; bottom:10%; }
+        100% { opacity: 1; bottom: 5%; }
+    }
+    @keyframes bounce-fade {
+        0%   { opacity: 0; bottom: 10%; }
+        100% { opacity: 1; bottom: 5%; }
+    }
+
+/*
 @-webkit-keyframes fade {
     0% {
         opacity: 0.5
@@ -233,6 +256,7 @@ h1 span {
         opacity: 0.5
     }
 }
+*/
 
 /* Menu mobile */
 
