@@ -376,11 +376,16 @@ h1 span {
     background: white;
     z-index: 10;
 }
+
 .about-me .content {
     position: relative;
     width: 900px;
     margin: 0 auto;
     overflow: hidden;
+}
+
+.about-me .content.active {
+    overflow: auto;
 }
 .about-me h1 {
 /*    font-family: 'Lato', sans-serif;*/
@@ -554,6 +559,7 @@ h1 span {
     color: white;
     border: 1px solid #ef116f;
 }
+
 .portfolio .portfolio-margin h1 {
     font-size: 34px;
     color: black;

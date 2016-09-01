@@ -9,7 +9,6 @@ $(".start-page .content").height($(window).height() - $(".menu").height());
 
 
 var mySVGsToInject = document.querySelectorAll('img.svg-inject');
-
 SVGInjector(mySVGsToInject);
 
   // Menu Scroll to content and Active menu
@@ -24,13 +23,24 @@ SVGInjector(mySVGsToInject);
 
    $('a[href*=#]').bind('click', function(e) {
 	e.preventDefault();
-       
+    
+    var showMore = 0;
 	var target = $(this).attr("href");
-			
+    if (target == '#about-me-expand') {
+        $('.about-me > .content').toggleClass('active');
+        if ($('#readMoreButton').text() == 'SHOW MORE') {
+            $('#readMoreButton').text('SHOW LESS');
+        } else {
+            $('#readMoreButton').text('SHOW MORE');
+        }
+        
+    } else {
+        $('html, body').stop().animate({ scrollTop: $(target).offset().top-140 }, 600, function() {
 
-	$('html, body').stop().animate({ scrollTop: $(target).offset().top-140 }, 600, function() {
+	   });
+    }
+//    console.log(target);
 
-	});
 			
 	return false;
    });
