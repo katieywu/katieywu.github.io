@@ -1,3 +1,14 @@
 <h3>Mini Google Web Crawler</h3>
-<p>"Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot."</p>
+<p>With a team I wrote a search engine for our CIS455 final project. It consisted of four interacting parts including a distributed web crawler, indexer, PageRank, and search engine algorithm. I developed the cloud-based, Mercator-style web crawler, which downloads pages from the internet and extracts links from them in a breath-first manner, then uploads them to an S3 database for processing. </p>
+
+<ul>Notable features of the crawler: 
+    <li>- Distributed across multiple EC2 instances, multithreading, a hand-written HTTP client</li>
+    <li>- Adhering to the Robots Exclusion Protocol and storing them with a 2<sup>18</sup> sized LRU cache</li>
+    <li>- Fingerprinting for the "content-seen" test using the Rabin 64 hash</li>
+    <li>- Persistent state using AWS S3 so crawling could be resumed after stopping</li>
+</ul>
+    
+<p>My biggest breakthroughs were in speed and scalability. The initial crawler I wrote had a speed of 100 pages/min per node, but after reducing the number of I/Os to the database, using a cache for the robots.txt, and other optimizations, I was able to increase crawling to a top speed of <strong>4800 pages/min per node</strong>, one of the fastest our professor has seen. Our goal was to populate a corpus of 500k documents in 10 hours, but we accomplished 1.7 mil documents in 5 hours with my optimizations.</p>
+
+<p>Technologies/skills learned: Java concurrent programming, cloud computing, Amazon AWS (EC2, S3, DynamoDB), BerkeleyDB, scalability."</p>
 <img src="img/portfolio/1.jpg" alt="img01" style="width: 50%"/>
