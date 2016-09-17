@@ -388,7 +388,7 @@ var Grid = (function() {
             //NEW CODE-------//
             //load the html and update heights using calcHeight()
             var previewSelf = this;
-            console.log(this.$post.id);
+//            console.log(this.$post.id);
             this.$post.load("post"+current+".html", function() {
 //                console.log("shouldve loaded");
                 previewSelf.$post.imagesLoaded(function() {
