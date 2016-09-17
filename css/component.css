@@ -122,7 +122,14 @@
 	margin-bottom: 10px;
 }
 
-.post p, .post ul {
+.post h4 {
+    color: #656565;
+    letter-spacing: 1px;
+    font-weight: 300;
+	font-size: 16px;
+}
+
+.post p, .post ul{
     margin: 20px 5%;
     letter-spacing: 1px;
     text-align: justify;
@@ -134,6 +141,18 @@
 
 .pink {
     color: #ef116f;
+}
+
+.post a {
+    letter-spacing: 1px;
+    text-align: justify;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 22px;
+    color: #ef116f;
+}
+.post a:hover {
+    text-decoration: underline;
 }
 
 .post li {
