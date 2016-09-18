@@ -123,6 +123,13 @@
 	margin-bottom: 10px;
 }
 
+.post h2 {
+    font-weight: 300;
+	font-size: 36px;
+	padding: 40px 0 10px;
+	margin-bottom: 10px;
+}
+
 .post h4 {
     color: #656565;
     letter-spacing: 1px;

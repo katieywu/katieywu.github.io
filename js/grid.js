@@ -383,7 +383,7 @@ var Grid = (function() {
             
 			// update current value
 			current = this.$item.index();
-            console.log("current at update(): " +current);
+//            console.log("current at update(): " +current);
             
             //NEW CODE-------//
             //load the html and update heights using calcHeight()
