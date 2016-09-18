@@ -191,10 +191,44 @@
 }
 
 .post .flex-container img {
-	width: 100%;
-	padding: 0px;
+    width: 100%;
+    padding: 0px;
     margin: auto;
 }
+
+#tmImg1 {
+    padding: 0px 10px 0px 0px;
+}
+
+#tmImg2 {
+    padding: 0px 0px 0px 10px;
+}
+
+/*CSS for the 2x2 Grid*/
+
+.grid2x2 {
+    margin: auto 5%;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.grid2x2 > div {
+    flex-basis: calc(50% - 20px);
+    justify-content: center;
+    flex-direction: row;
+}
+.grid2x2 > div > img {
+    display: flex;
+    padding: 10 0px;
+    justify-content: center;
+    flex-direction: row;
+}
+.box {
+    margin: auto;
+}
+/*END OF POST CSS */
+
 
 .og-grid li > a >.text {
     position: absolute;
