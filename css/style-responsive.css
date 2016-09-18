@@ -119,6 +119,17 @@ textarea{
   position:relative;
 }
 
+.post .flex-container {
+    display: -ms-flex;
+	display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.post .flex-container img {
+    padding: 0px;
+}
+    
 }
 
 
@@ -238,7 +249,17 @@ textarea{
   width:420px;
 }
 
-
+.post .flex-container {
+    display: -ms-flex;
+	display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+    
+.post .flex-container img {
+    padding: 0px;
+}
+    
 }
 
 

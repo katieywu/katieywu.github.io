@@ -109,10 +109,11 @@
 	text-align: center;
 }
 .post img {
-	display: inline-block;
+    margin: auto;
+    padding: 0 5%;
+    width: 100%;
 	max-height: 100%;
 	max-width: 100%;
-    padding: 20px;
 }
 
 .post h3 {
@@ -130,8 +131,10 @@
 }
 
 .post figcaption {
+    margin: 20px 20%;
     color: #656565;
     letter-spacing: 1px;
+    line-height: 22px;
     font-weight: 300;
 }
 
@@ -172,6 +175,20 @@
     font-size:xx-small; 
     vertical-align:super;
 }
+
+.post .flex-container {
+    display: -ms-flex;
+	display: -webkit-flex;
+    display: flex;
+    margin: auto 5%;
+}
+
+.post .flex-container img {
+	width: 100%;
+	padding: 0px;
+    margin: auto;
+}
+
 .og-grid li > a >.text {
     position: absolute;
     top: 0px;
