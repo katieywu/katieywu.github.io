@@ -208,6 +208,7 @@
 
 .grid2x2 {
     margin: auto 5%;
+    min-height: auto;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
