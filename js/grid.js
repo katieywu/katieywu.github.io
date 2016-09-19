@@ -388,68 +388,27 @@ var Grid = (function() {
             //NEW CODE-------//
             //load the html and update heights using calcHeight()
             var previewSelf = this;
-//            console.log(this.$post.id);
             this.$post.load("post"+current+".html", function() {
-//                console.log("shouldve loaded");
                 previewSelf.$post.imagesLoaded(function() {
-//                    console.log("REALLY HSOULDVE loaded");
                     previewSelf.calcHeight();
 
                 });
 
             });
-            
-            //update the size of the box
-//            this.calcHeight();
-//			this.$previewEl.css( 'height', this.height );
-//			$(".og-expanded").css( 'height', 1000 );
-//            $(".og-expander").css('height', 1000);
-            //---------------//
-            
-			// update preview´s content
-//			var $itemEl = this.$item.children( 'a' ),
-//				eldata = {
-//					href : $itemEl.attr( 'href' ),
-//					largesrc : $itemEl.data( 'largesrc' ),
-//					title : $itemEl.data( 'title' ),
-//					description : $itemEl.data( 'description' )
-//				};
-
-//			this.$title.html( eldata.title );
-//			this.$description.html( eldata.description );
-//			this.$href.attr( 'href', eldata.href );
-
-//			var self = this;
-			
-			// remove the current image in the preview
-//			if( typeof self.$largeImg != 'undefined' ) {
-//				self.$largeImg.remove();
-//			}
-
-			// preload large image and add it to the preview
-			// for smaller screens we don´t display the large image (the media query will hide the fullimage wrapper)
-//			if( self.$fullimage.is( ':visible' ) ) {
-//				this.$loading.show();
-//				$( '<img/>' ).load( function() {
-//					var $img = $( this );
-//					if( $img.attr( 'src' ) === self.$item.children('a').data( 'largesrc' ) ) {
-//						self.$loading.hide();
-//						self.$fullimage.find( 'img' ).remove();
-//						self.$largeImg = $img.fadeIn( 350 );
-//						self.$fullimage.append( self.$largeImg );
-//					}
-//				} ).attr( 'src', eldata.largesrc );	
-//			}
 
 		},
 		open : function() {
 
-//			setTimeout( $.proxy( function() {	
-				// set the height for the preview and the item
-				this.setHeights();
-				// scroll to position the preview in the right place
-//				this.positionPreview();
-//			}, this ), 25 );
+            var previewSelf = this;
+//            console.log(this.$post.id);
+            this.$post.load("post"+current+".html", function() {
+                previewSelf.$post.imagesLoaded(function() {
+                    previewSelf.setHeights();
+
+                });
+
+            });
+            
 
 		},
 		close : function() {
@@ -460,33 +419,19 @@ var Grid = (function() {
 						$( this ).off( transEndEventName );
 					}
 					self.$item.removeClass( 'og-expanded' );
-//                   console.log("close called");
                    
                    $('.gridExtender').css('height', 'auto');
                    $('.gridExtender').removeClass('gridExtender');
+//                    console.log("GRID EXTENDER REMOVED");
 				    self.$previewEl.remove();
 				};
 
-//			setTimeout( $.proxy( function() {
-
-//				if( typeof this.$largeImg !== 'undefined' ) {
-//					this.$largeImg.fadeOut( 'fast' );
-//				}
-                
-//                this.$previewEl.children('img').fadeOut('fast');
                 onEndFn.call();
 
 				this.$previewEl.css( 'height', 0 );
 				// the current expanded item (might be different from this.$item)
 				var $expandedItem = $items.eq( this.expandedIdx );
-				$expandedItem.css( 'height', $expandedItem.data( 'height' ) ).on( transEndEventName, onEndFn );
-				
-            
-				if( !support ) {
-					onEndFn.call();
-				}
-
-//			}, this ), 25 );
+				$expandedItem.css( 'height', $expandedItem.data( 'height' ) );
 			
 			return false;
 
@@ -494,12 +439,10 @@ var Grid = (function() {
 
         calcHeight : function() {
             this.getEl().css( 'height', 'auto' );
-//            console.log("el height auto:"+this.getEl().height());
             
             var heightPreview = this.getEl().height();
             var itemHeight = heightPreview + this.$item.data( 'height' ) + marginExpanded;
-            
-//            console.log("gridExtender height "+$('.gridExtender').css('height'));
+
             $('.gridExtender').css('height', itemHeight);
             
             this.height = heightPreview;
@@ -517,18 +460,18 @@ var Grid = (function() {
 					}
 					self.$item.addClass( 'og-expanded' );
                     self.$item.addClass('gridExtender');
-
+//                    console.log("GRID EXTENDER ADDED");
 				};
 
             
             onEndFn.call();
 			this.calcHeight();
 			this.$previewEl.css( 'height', this.height );
-			this.$item.css( 'height', this.itemHeight ).on( transEndEventName, onEndFn );
-            
-			if( !support ) {
-				onEndFn.call();
-			}
+			this.$item.css( 'height', this.itemHeight );
+//            this.$item.css( 'height', this.itemHeight ).on( transEndEventName, onEndFn );
+//			if( !support ) {
+//				onEndFn.call();
+//			}
 
 		},
 		positionPreview : function() {
