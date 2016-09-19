@@ -1,6 +1,6 @@
-<h3>Mini Google Web Crawler</h3>
+<h3>Elgoogle Web Crawler</h3>
 <!--<h4>Crawling the web, one page at a time.</h4>-->
-<p><strong class="pink">The Gist:</strong> With a team I wrote a search engine for our CIS455 final project. It consisted of four interacting parts including a distributed web crawler, indexer, PageRank, and search engine algorithm. I developed the cloud-based, Mercator-style web crawler, which downloads pages from the internet and extracts links from them in a breath-first manner placing the links into a URL frontier (a simple blocking queue), then uploads them to an AWS S3 database for processing. </p>
+<p><strong class="pink">The Gist:</strong> With a team I wrote a search engine (we called it "Elgoogle") for our Internet & Web Systems (CIS455) final project. It consisted of four interacting parts including a distributed web crawler, indexer, PageRank, and search engine algorithm. I developed the <strong>cloud-based, Mercator-style web crawler</strong>, which downloads pages from the internet and extracts links from them in a breath-first manner by placing the links into a URL frontier (a simple blocking queue), then uploads them to an AWS S3 database for processing. </p>
 
 <p>My biggest breakthroughs were in speed and scalability. The initial crawler I wrote had a speed of <strong>100 pages/min</strong> per node, but after reducing the number of I/Os to the database, using a cache for the robots.txt, and other optimizations, I was able to increase crawling to an average speed of <strong>4800 pages/min per node</strong>, one of the fastest our professor has seen.</p> 
 
@@ -26,6 +26,6 @@
     <figcaption>Crawl speed in URLs downloaded per second</figcaption>
 </figure>
 
-<p><strong class="pink">Technologies/skills learned:</strong> Java concurrent programming, cloud computing, Amazon AWS (EC2, S3, DynamoDB), BerkeleyDB, scalability."</p>
+<p><strong class="pink">Technologies/skills learned:</strong> Java concurrent programming, cloud computing, Amazon AWS (EC2, S3, DynamoDB), BerkeleyDB, scalability.</p>
 
 

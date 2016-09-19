@@ -1,32 +1,54 @@
-<h3>Tailors + Madmen</h3>
-<!--<h4>Crawling the web, one page at a time.</h4>-->
-<p><strong class="pink">The Gist:</strong> As one of four members of the Tailors + Madmen team, I was the principal designer and creative director for our Kickstarter startup, a project focused on creating minimalist and customizable watches. Three good friends approached me to help them develop their brand identity, so I was responsible for driving the project's aesthetic.  and suggesting that we focus on young, working individuals in search of a "classy but affordable" watch. Our project was launched on Kickstarter in Fall 2015. Check out <a href="http://tailorsandmadmen.com/">our website.</a></p>
+<h3>Computer Vision and Image Processing</h3>
+<p><strong class="pink">The Gist: </strong> When I studied abroad in London I took an Computer Vision/Image Processing class, and I got to implement some pretty cool image processing algorithms. All work was done in <strong>MATLAB.</strong></p>
 
+<h2>Segmentation Algorithms</h2>
+<p><strong class="pink">Thresholding: </strong>By first plotting a histogram of the pixel intensities in the image, and then eyeballing a trough point, I segmented the image using a very simple thresholding algorithm.</p>
+
+<p><strong class="pink">Region Growing: </strong>This algorithm examines neighboring pixels of the seed point and determines whether the pixel neighbors should be added to the region based on a threshold. The default seed is the middle of the image. It is by FAR the slowest algorithm of the ones I’ve implemented because it’s <strong>checking every pixel’s neighbors</strong>, essentially running breadth-first search on a graph with 65536 nodes, running in <strong> O(|V| + |E|).</strong> It’s significantly slower than thresholding with the results being about the same regarding skin separation. Region growing, however, does lump the hair into one region unlike thresholding.</p>
+
+<p><strong class="pink">Mean Shift: </strong>The mean shift clustering algorithm replaces each pixel with the mean of the pixels in a range-r kernel window and whose intensity is within a distance d, defined by the Root Mean Square Distance.</p>
 
 <div class="flex-container">
-    <div><img id="tmImg1" src="img/portfolio/tmTop.jpg" alt="tmTop"/></div>
-    <div>
-    <img id="tmImg2" src="img/portfolio/tmSam.jpg" alt="tmSam"/></div>
+    <figure>
+        <img src="img/portfolio/imgOriginal.png" style="width: 90%"/>
+    </figure>
+    
+    <figure>
+        <img src="img/portfolio/imgThresholding.png" style="width: 90%"/>
+    </figure>
+    
+    <figure>
+        <img src="img/portfolio/imgRegiongrowing.png" style="width: 90%"/>
+    </figure>
+    
+    <figure>
+        <img src="img/portfolio/imgMeanshift30.png" style="width: 90%"/>
+    </figure>
+</div>
+<br>
+<h2>Denoising Algorithms</h2>
+
+<p><strong class="pink">Non-local Means Denoising: </strong>Non-local means filtering takes a mean of all pixels in the image to smooth a target pixel, weighted by how similar these pixels are to the target. This results in much better post-filtering clarity, and less loss of detail in the image compared with local mean algorithms. I implemented this using a pre-computed Integral Image (pre-computed sum area table). This algorithm varied based on many parameters like the <strong>Standard Deviation, Decay Parameter, Window Size, and Patch Size.</strong> Here is the best quality I've gotten out of this algorithm. </p>
+
+<div class="flex-container">
+    <figure>
+        <img src="img/portfolio/imgAlley.png" style="width: 90%"/>
+        <figcaption>Original noisy image</figcaption>
+    </figure>
+    
+    <figure>
+        <img src="img/portfolio/imgWindow21img.png" style="width: 90%"/>
+        <figcaption>Denoised image</figcaption>
+    </figure>
+    
+    <figure>
+        <img src="img/portfolio/imgWindow21.png" style="width: 90%"/>
+        <figcaption>Difference image (all the noise that was removed, such wow.)</figcaption>
+    </figure>
 </div>
 
-<h2>Watch Design</h2>
-<p>As principal designer I had an enormous amount of input in the design of the watches as well as the general aesthetic. From the graphics that we used to the color of the watches to the types of straps discussed, I played a huge role in shaping how this brand turned out. My teammates were great in giving input as well, but being the only member with an aesthetic background, I spearheaded most of the design.</p>
+<h2>Edge/Corner Detection Algorithms</h2>
 
-<figure>
-<img src="img/portfolio/tmDarren.jpg" alt="tmDarren" style="width: 80%"/>
-    <figcaption>Closeup of one of the watches I designed</figcaption>
-</figure>
+<p><strong class="pink">Sobel, Prewitt, Gaussian, Canny Edge Detection: </strong>The Sobel output is visually the most accurate because it doesn't discard too much information like the Canny does, and it results in relatively clean, crisp lines. Unfortunately I've lost my MATLAB license and can't rerun my code to get any result images.</p>
 
-<figure>
-<img src="img/portfolio/tmFaces.png" alt="tmFaces" style="width: 80%"/>
-    <figcaption>Mockup of the faces in the running to be our final design, done in Illustrator</figcaption>
-</figure>
-
-<figure>
-<img src="img/portfolio/tmCad.jpg" alt="tmCad" style="width: 80%"/>
-    <figcaption>SolidWorks model (not my work) of the case  I helped design</figcaption>
-</figure>
-
-<h2>Web Design</h2><br>
-<img src="img/portfolio/tmNancy.jpg"/><br><br>
-<img src="img/portfolio/tmstoriespage.jpg"/>
+<p><strong class="pink">Moravec, Harris Corner Detection: </strong>Unfortunately I've lost my MATLAB license and can't rerun my code to get any result images. But check out the source code on my Github!</p>

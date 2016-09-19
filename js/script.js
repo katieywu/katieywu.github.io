@@ -39,7 +39,7 @@ SVGInjector(mySVGsToInject);
 
 	   });
     }
-//    console.log(target);
+    console.log(target);
 
 			
 	return false;
