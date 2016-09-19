@@ -307,6 +307,9 @@
 @media screen and (max-width: 830px) {
 
 	.og-expander h3 { font-size: 32px; }
+    .og-expander h2 {
+        font-size: 24px;
+    }
 	.og-expander p { font-size: 13px; }
 	.og-expander a { font-size: 12px; }
 
