@@ -575,6 +575,23 @@ h1 span {
     border: 0;
 }
 
+#fun {
+    background: #e8e8e8;
+}
+
+.portfolio h2 {
+    height: auto;
+    text-align: center;
+    font-size: 14px;
+    width: 500px;
+    margin: 10px auto;
+    color: #000000;
+    line-height: 26px;
+    letter-spacing: 1;
+    position: relative;
+    font-weight: 300;
+}
+
 /* Portfolio grid */
 
 .grid {

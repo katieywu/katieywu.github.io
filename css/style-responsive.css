@@ -48,7 +48,7 @@ h1 {
   margin-bottom:70px;
  }
 
-.portfolio .portfolio-margin{
+.portfolio .portfolio-margin, .portfolio h2{
   width:300px;
 }
 
@@ -188,7 +188,7 @@ h1 {
   margin-bottom:70px;
  }
 
-.portfolio .portfolio-margin{
+.portfolio .portfolio-margin, .portfolio h2{
   width:300px;
 }
 

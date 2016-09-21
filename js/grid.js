@@ -288,6 +288,7 @@ var Grid = (function() {
 			var $item = $( this ).parent();
 			// check if item already opened
 			current === $item.index() ? hidePreview() : showPreview( $item );
+
 			return false;
 
 		} );
@@ -388,7 +389,8 @@ var Grid = (function() {
             //NEW CODE-------//
             //load the html and update heights using calcHeight()
             var previewSelf = this;
-            this.$post.load("post"+current+".html", function() {
+//            console.log("id: " + this.$item.attr('id'));
+            this.$post.load("html/"+this.$item.attr('id')+".html", function() {
                 previewSelf.$post.imagesLoaded(function() {
                     previewSelf.calcHeight();
 
@@ -401,7 +403,7 @@ var Grid = (function() {
 
             var previewSelf = this;
 //            console.log(this.$post.id);
-            this.$post.load("post"+current+".html", function() {
+            this.$post.load("html/"+this.$item.attr('id')+".html", function() {
                 previewSelf.$post.imagesLoaded(function() {
                     previewSelf.setHeights();
 
