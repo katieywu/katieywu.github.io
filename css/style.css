@@ -576,8 +576,22 @@ h1 span {
 }
 
 #fun {
-    background: #e8e8e8;
+/*   margin-top: 280px; */
+    background-color: #e8e8e8;
 }
+
+/*fake gray background for the "FUN: section */
+.gray-bg {
+    position: absolute;
+    margin-top: 140px;
+    z-index: -200;
+    left: 0;
+    right: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #e8e8e8;
+}
+
 
 .portfolio h2 {
     height: auto;

@@ -173,9 +173,10 @@ $.fn.imagesLoaded = function( callback ) {
 var Grid = (function() {
 
 		// list of items
-	var $grid = $( '#og-grid' ),
+//	var $grid = $( '#og-grid' ),
+    var $grid,
 		// the items
-		$items = $grid.children( 'li' ),
+		$items,
 		// current expanded item's index
 		current = -1,
 		// position (top) of the expanded item
@@ -205,8 +206,12 @@ var Grid = (function() {
 			easing : 'ease'
 		};
 
-	function init( config ) {
+	function init( config, gridName ) {
 		
+        $grid = gridName;
+        $items = $grid.find( 'li' );
+//        console.log(gridName);
+        
 		// the settings..
 		settings = $.extend( true, {}, settings, config );
 

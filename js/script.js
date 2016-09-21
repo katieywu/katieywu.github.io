@@ -8,6 +8,12 @@ $(".menu-media").sticky({topSpacing:0});
 $(".start-page .content").height($(window).height() - $(".menu").height()); 
 
 
+//$(window).load(function(){
+//    
+//    $(".gray-bg").css("height", $("#fun").outerHeight(true) + 140+ "px");
+//});
+                          
+
 var mySVGsToInject = document.querySelectorAll('img.svg-inject');
 SVGInjector(mySVGsToInject);
 
