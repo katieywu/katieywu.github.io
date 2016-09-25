@@ -283,7 +283,6 @@
 
         <div class="clear"></div>
 
-<!--
         <section class="portfolio" id="fun">
             <div class="portfolio-margin">
 
@@ -296,7 +295,7 @@
 
                     <h2>I don't like putting my work into one box or category, because I don't think that I fit in to one box or category. Check it out and decide for yourself.⚡ </h2>
                     
-                    <li id="crawler">
+                    <li id="painting">
                         <a>
                         <img src="img/portfolio/thumbs/crawler.png" alt="img01"/>
                         
@@ -307,7 +306,7 @@
                         </a>
                     </li>
                     
-                    <li id="condoms">
+                    <li id="condoms2">
                         <a>
                             <img src="img/portfolio/thumbs/condoms.png" alt="img02" />
                         <div class="text">
@@ -317,7 +316,7 @@
                         </a>
                     </li>
                     
-                    <li id="processing">
+                    <li id="processing2">
                         <a>
                             <img src="img/portfolio/thumbs/vis.png" alt="img03" />
 
@@ -328,7 +327,7 @@
                         </a>
                     </li>
                     
-                    <li id="cv">
+                    <li id="cv2">
                         <a>
                             <img src="img/portfolio/thumbs/imageProcessing.png" alt="imgProcessing" />
                             
@@ -339,7 +338,7 @@
                         </a>
                     </li>
                     
-                    <li id="gsrgo">
+                    <li id="gsrgo2">
                         <a>
                             <img src="img/portfolio/thumbs/gsrgo.png" alt="gsrgo" />
                             
@@ -350,7 +349,7 @@
                         </a>
                     </li>
                     
-                    <li id="tm">
+                    <li id="tm2">
                         <a>
                             <img src="img/portfolio/thumbs/tm.png" alt="tm" />
                             
@@ -361,7 +360,7 @@
                         </a>
                     </li>
                     
-                    <li id="waterworld">
+                    <li id="waterworld2">
                         <a>
                             <img src="img/portfolio/thumbs/waterworld.png" alt="waterworld" />
                             
@@ -372,7 +371,7 @@
                         </a>
                     </li>
                     
-                    <li id="firefly">
+                    <li id="firefly2">
                         <a>
                             <img src="img/portfolio/thumbs/firefly.png" alt="firefly" />
                             
@@ -388,7 +387,6 @@
             </div>
             </div>
         </section>
--->
         
         <!-- Contact-->
 
@@ -497,11 +495,11 @@
     <script src="js/grid.js"></script>
     <script>
         $(function() {
-            Grid.init(null,$("#portfolio"));
+            makeGrid().init(null,$("#portfolio"));
         });
-//        $(function() {
-//            Grid.init(null,$("#fun"));
-//        });
+        $(function() {
+            makeGrid().init(null,$("#fun"));
+        });
     </script>
 </body>
 

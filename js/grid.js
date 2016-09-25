@@ -170,7 +170,7 @@ $.fn.imagesLoaded = function( callback ) {
 
 //------------------------------//
 
-var Grid = (function() {
+var makeGrid = function() {
 
 		// list of items
 //	var $grid = $( '#og-grid' ),
@@ -207,7 +207,6 @@ var Grid = (function() {
 		};
 
 	function init( config, gridName ) {
-		
         $grid = gridName;
         $items = $grid.find( 'li' );
 //        console.log(gridName);
@@ -260,7 +259,7 @@ var Grid = (function() {
 	}
 
 	function initEvents() {
-		
+        
 		// when clicking an item, show the preview with the item´s info and large image.
 		// close the item if already expanded.
 		// also close if clicking on the item´s cross
@@ -509,4 +508,4 @@ var Grid = (function() {
 		addItems : addItems
 	};
 
-})();
+};
