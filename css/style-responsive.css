@@ -120,10 +120,13 @@ textarea{
     padding: 10px 0px;
 }
     
-.grid2x2 > div {
-    flex-basis: auto;
-    justify-content: center;
-    flex-direction: row;
+.flexLayout {
+    flex-wrap:wrap;
+    padding: 0;
+}
+    
+.flexLayoutCol {
+    width: 100%;
 }
     
 }
@@ -256,10 +259,13 @@ textarea{
     padding: 0px;
 }
     
-.grid2x2 > div {
-    flex-basis: auto;
-    justify-content: center;
-    flex-direction: row;
+.flexLayout {
+    flex-wrap:wrap;
+    padding: 0;
+}
+    
+.flexLayoutCol {
+    width: 100%;
 }
     
 }

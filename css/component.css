@@ -102,7 +102,8 @@
 /*	height: 100%;*/
 	overflow: hidden;
 	position: relative;
-    padding: 0 40px 0 20px;
+    /*why did i make it 0 40 0 20 ??*/
+    padding: 0 20px 0 20px;
 }
 
 .post {
@@ -204,29 +205,23 @@
     padding: 0px 0px 0px 10px;
 }
 
-/*CSS for the 2x2 Grid*/
+.flexLayout {
+    display: flex;
+    flex-basis: calc(50% - 20px);  
+    padding: 0 40px;
+}
 
-.grid2x2 {
-    margin: auto 5%;
-    min-height: auto;
+.flexLayoutCol {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    flex-direction: row;
+    width: 50%;
 }
-.grid2x2 > div {
-    flex-basis: calc(50% - 20px);
-    justify-content: center;
-    flex-direction: row;
+
+.flexLayoutCol img {
+    padding: 0px 10px;
 }
-.grid2x2 > div > img {
-    display: flex;
-    padding: 10 0px;
-    justify-content: center;
-    flex-direction: row;
-}
-.box {
-    margin: auto;
-}
+
 /*END OF POST CSS */
 
 
