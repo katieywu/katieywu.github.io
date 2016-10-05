@@ -6,16 +6,10 @@ $(".sticky").sticky({topSpacing:0});
 $(".menu-media").sticky({topSpacing:0});
 
 $(".start-page .content").height($(window).height() - $(".menu").height()); 
-
-
-//$(window).load(function(){
-//    
-//    $(".gray-bg").css("height", $("#fun").outerHeight(true) + 140+ "px");
-//});
                           
 
-var mySVGsToInject = document.querySelectorAll('img.svg-inject');
-SVGInjector(mySVGsToInject);
+//var mySVGsToInject = document.querySelectorAll('img.svg-inject');
+//SVGInjector(mySVGsToInject);
 
   // Menu Scroll to content and Active menu
   var lastId,
@@ -99,7 +93,6 @@ else
 }
 
 
-
   //Menu mobile click
   $( ".icon" ).click(function() {
     $( " ul.menu-click" ).slideToggle( "slow", function() {
@@ -107,19 +100,3 @@ else
     });
   });
 
-
-//$(window).load(function(){
-//
-//$(".preloader").delay(1000).fadeOut("slow")
-//
-//  // Parallax
-//  if ($('.parallax-background').length) {
-//    $(".parallax-background").parallax();
-//  }
-//  
-//  // Parallax
-//  if ($('.parallax-background-partners').length) {
-//    $(".parallax-background-partners").parallax();
-//  }  
-//
-//});
