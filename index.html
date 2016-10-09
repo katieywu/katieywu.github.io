@@ -13,6 +13,8 @@
     <meta name="author" content="Katie Wu" />
     <meta http-equiv="Cache-Control" content="public, max-age=2592000">
 
+<!--    <link rel="shortcut icon" href="img/icons/favicon2.png"> -->
+
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/component.css" />
@@ -22,6 +24,12 @@
 </head>
 
 <body>
+    <script>
+        ["img/background/start-page3.png"].forEach(function(img) {
+            $.get(img);
+        });
+    </script>
+    
     <div class="container">
 
         <!-- section menu mobile -->
@@ -89,7 +97,7 @@
             <div class="content">
                 <div class="text">
 
-                    <div class="logo"><img src="img/icons/logo.png"></div>
+                    <div class="logo"><img src="img/icons/logo2.png"></div>
 
                     <h1>CODE, DESIGN, FUN.</h1>
                     <hr/>
@@ -139,14 +147,14 @@
                 <h1>HEY THERE, I'M KATIE.</h1>
                 <hr/>
                 <img src="/img/icons/propic4.png" alt="My Profile Picture">
-                <p class="title">I'm a senior at the University of Pennsylvania's School of Engineering and Applied Science, currently pursuing a BSE degree in the <a href="http://cg.cis.upenn.edu/dmd_program.html">Digital Media Design program</a>, and an MSE in <a href="http://cg.cis.upenn.edu/cggt_program.html">Computer Graphics & Game Technology</a>. I'm interested in tech (obviously), VR/AR, design, baking the perfect lemon cake and aspiring to brew the perfect cup of Earl Grey tea. Oh and I'm an excellent parallel parker.</p>
+                <p class="title">I'm a senior at the University of Pennsylvania's School of Engineering and Applied Science, currently pursuing a BSE degree in the <a href="http://cg.cis.upenn.edu/dmd_program.html">Digital Media Design program</a>, and an MSE in <a href="http://cg.cis.upenn.edu/cggt_program.html">Computer Graphics & Game Technology</a>. I'm interested in tech (obviously), VR/AR, design, and aspiring to bake the perfect lemon cake and brew the perfect cup of Earl Grey tea. Oh and I'm an excellent parallel parker.</p>
 
                 <div class="column-one">
 
                     <div class="circle-one"><svg class="about-me-icon" width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M649 983l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23t-10 23zm1079 457v64q0 14-9 23t-23 9h-960q-14 0-23-9t-9-23v-64q0-14 9-23t23-9h960q14 0 23 9t9 23z" fill="#ef116f"/></svg></div>
 
                     <h2>CODE</h2>
-                    <p>I have experience and interest in iOS, front-end, and distributed systems using Obj-C/Swift, HTML/CSS/JavaScript, Java/C++. I also do computer graphics.</p>
+                    <p>I've done iOS, front-end, computer graphics programming (C++ and Unity3D/C#), and distributed systems (Java), but there's always more to learn!</p>
 
                 </div>
 
@@ -158,7 +166,7 @@
                     </div>
 
                     <h2>DESIGN</h2>
-                    <p>I do UI/UX, IxD, and prototyping, using tools like Sketch, Adobe Ps/Ai, and Framer.js to create pixel perfect experiences.</p>
+                    <p>I have professional experience in UI/UX design and prototyping, using tools like Sketch, Adobe Ps/Ai, and Framer.js to create pixel perfect experiences.</p>
 
                 </div>
 
@@ -168,7 +176,7 @@
                     <div class="circle-three"><svg class="about-me-icon" width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1333 566q18 20 7 44l-540 1157q-13 25-42 25-4 0-14-2-17-5-25.5-19t-4.5-30l197-808-406 101q-4 1-12 1-18 0-31-11-18-15-13-39l201-825q4-14 16-23t28-9h328q19 0 32 12.5t13 29.5q0 8-5 18l-171 463 396-98q8-2 12-2 19 0 34 15z" fill="#ef116f"/></svg></div>
 
                     <h2>FUN</h2>
-                    <p>I'm passionate about 3D modeling, virtual and augmented reality, painting, and getting my hands dirty (literally) with pottery and painting. </p>
+                    <p>I'm passionate about 3D art, virtual and augmented reality, painting, and getting my hands dirty (literally) with pottery and baking. </p>
 
                 </div>
 
@@ -542,10 +550,10 @@
             });
             
             
-            ["img/fun/selfie.jpg"].forEach(function(img) {
-//                console.log(img);
-                $.get(img);
-            });
+//            ["img/fun/selfie.jpg"].forEach(function(img) {
+////                console.log(img);
+//                $.get(img);
+//            });
         })
     </script>
 </body>
