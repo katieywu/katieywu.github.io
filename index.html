@@ -455,18 +455,17 @@
         });
     </script>
     <script>
-        $(document).ready(function() {
-//            var folder = "img/porfolio/";
-            var imgs = [];
+        $(document).ready(function() {            
             
+            //NOTE: THIS DOES NOT WORK IN LOCALHOST TESTING
 //            $.ajax({
 //                url : "img/portfolio/",
 //                success: function (data) {
 //                    $(data).find("a").attr("href", function (i, val) {
-//                        if( val.match(/\.(jpe?g|png|gif)$/) ) { 
-//                            val = val.substring(1);
+//                        if( val.match(/\.(jpe?g|png|gif)$/) ) {
+////                            val = val.substring(1);
 //                            img = new Image();
-//                            img.src = val;
+//                            img.src = "http://katieywu.com/img/portfolio/" + val;
 //                        } 
 //                    });
 //                }
@@ -477,14 +476,16 @@
 //                success: function (data) {
 //                    $(data).find("a").attr("href", function (i, val) {
 //                        if( val.match(/\.(jpe?g|png|gif)$/) ) { 
-//                            val = val.substring(1);
+////                            val = val.substring(1);
 //                            img = new Image();
-//                            img.src = val;
+//                            img.src = "http://katieywu.com/img/fun/" + val;
 //                        } 
 //                    });
 //                }
 //            });
 
+            
+            //THIS CODE WILL WORK IN LOCALHOST TESTING
             var portfolioImgs = [
             "img/portfolio/condomsTeam.jpg",
             "img/portfolio/crawler.png",
@@ -541,10 +542,10 @@
             });
             
             
-//            ["img/fun/selfie.jpg"].forEach(function(img) {
-////                console.log(img);
-//                $.get(img);
-//            });
+            ["img/fun/selfie.jpg"].forEach(function(img) {
+//                console.log(img);
+                $.get(img);
+            });
         })
     </script>
 </body>
