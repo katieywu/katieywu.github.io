@@ -73,7 +73,25 @@ h1 span {
     width: 100%;
     height: 100%;
     z-index: 10;
-    background: url('../img/background/start-page3.png') #c0c0c0 top center fixed no-repeat;
+    /*background: url('../img/background/start-page3.png') #c0c0c0 top center fixed no-repeat;*/
+    background-color: #c0c0c0;
+    background-image: url('../img/background/start-page3.png');
+    background-position: top center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+    -webkit-background-position: top center;
+    -webkit-background-attachment: fixed;
+    -webkit-background-repeat: no-repeat;
+    
+    -moz-background-position: top center;
+    -moz-background-attachment: fixed;
+    -moz-background-repeat: no-repeat;
+    
+    -o-background-position: top center;
+    -o-background-attachment: fixed;
+    -o-background-repeat: no-repeat;
+    
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

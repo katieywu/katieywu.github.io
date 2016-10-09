@@ -11,6 +11,7 @@
     <meta name="description" content="Katie Wu's website: code, design, fun." />
     <meta name="keywords" content="katie wu, website, engineer, software developer, designer, design, programmer, coding, computer graphics, artist, university of pennsylvania, apple, ux designer, ui designer, ux/ui, game technology, games, graphics, cg, c++, java, sketch.app, unity" />
     <meta name="author" content="Katie Wu" />
+    <meta http-equiv="Cache-Control" content="public, max-age=2592000">
 
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -452,6 +453,99 @@
         $(function() {
             makeGrid().init(null,$("#fun"));
         });
+    </script>
+    <script>
+        $(document).ready(function() {
+//            var folder = "img/porfolio/";
+            var imgs = [];
+            
+//            $.ajax({
+//                url : "img/portfolio/",
+//                success: function (data) {
+//                    $(data).find("a").attr("href", function (i, val) {
+//                        if( val.match(/\.(jpe?g|png|gif)$/) ) { 
+//                            val = val.substring(1);
+//                            img = new Image();
+//                            img.src = val;
+//                        } 
+//                    });
+//                }
+//            });
+//            
+//            $.ajax({
+//                url : "img/fun/",
+//                success: function (data) {
+//                    $(data).find("a").attr("href", function (i, val) {
+//                        if( val.match(/\.(jpe?g|png|gif)$/) ) { 
+//                            val = val.substring(1);
+//                            img = new Image();
+//                            img.src = val;
+//                        } 
+//                    });
+//                }
+//            });
+
+            var portfolioImgs = [
+            "img/portfolio/condomsTeam.jpg",
+            "img/portfolio/crawler.png",
+            "img/portfolio/crawlerspeedTest.png",
+            "img/portfolio/fireflyFront.png",
+            "img/portfolio/fireflySide.png",
+            "img/portfolio/gsr1.jpg",
+            "img/portfolio/gsr2.jpg",
+            "img/portfolio/gsr3.jpg",
+            "img/portfolio/gsr4.jpg",
+            "img/portfolio/gsrflow1.jpg",
+            "img/portfolio/gsrflow2.jpg",
+            "img/portfolio/gsrflow3.jpg",
+            "img/portfolio/imgAlley.png",
+            "img/portfolio/imgHistogram.png",
+            "img/portfolio/imgMeanshift30.png",
+            "img/portfolio/imgOriginal.png",
+            "img/portfolio/imgRegiongrowing.png",
+            "img/portfolio/imgThresholding.png",
+            "img/portfolio/imgWindow21.png",
+            "img/portfolio/imgWindow21img.png",
+            "img/portfolio/tmCad.jpg",
+            "img/portfolio/tmDarren.jpg",            "img/portfolio/tmFaces.png",
+            "img/portfolio/tmNancy.jpg",            "img/portfolio/tmstoriespage.jpg",
+            "img/portfolio/tmTop.jpg",            "img/portfolio/visArmor.png",
+            "img/portfolio/visBlack.png",            "img/portfolio/visSide.jpg",            "img/portfolio/visTopDown.jpg",            "img/portfolio/waterworld.jpg",            "img/portfolio/waterworldWIP.jpg",
+            ];
+            
+            var funImgs = ["img/fun/arcticmonkeys.jpg", "img/fun/caravaggio.png",
+            "img/fun/emily.jpg",
+            "img/fun/gothgirl.jpg",
+            "img/fun/graphic.jpg",
+            "img/fun/jiejie.jpg",
+            "img/fun/kenneth.jpg",
+            "img/fun/koi.png",
+            "img/fun/oilcan.jpg",
+            "img/fun/porcelain.png",
+            "img/fun/pottery.png",
+            "img/fun/selfie.jpg",
+            "img/fun/selfie2.jpg",
+            "img/fun/shanghai.jpg",
+            "img/fun/sideView.jpg",
+            "img/fun/teacup.jpg",
+            "img/fun/willy.jpg",
+            "img/fun/wolf.jpg",
+            "img/fun/womanFigure.jpg"];
+
+            portfolioImgs.forEach(function(img) {
+                $.get(img);
+            });
+            
+            funImgs.forEach(function(img) {
+                $.get(img);
+            });
+            
+            
+//            ["img/fun/selfie.jpg"].forEach(function(img) {
+////                console.log(img);
+//                $.get(img);
+//            });
+        })
     </script>
 </body>
 

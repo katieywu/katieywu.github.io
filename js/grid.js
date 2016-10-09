@@ -215,11 +215,9 @@ var makeGrid = function() {
             
 			// update current value
 			current = this.$item.index();
-//            console.log("current at update(): " +current);
             
             //load the html and update heights using calcHeight()
             var previewSelf = this;
-//            console.log("id: " + this.$item.attr('id'));
             this.$post.load("html/"+this.$item.attr('id')+".html", function() {
                 previewSelf.$post.imagesLoaded(function() {
                     previewSelf.calcHeight();
@@ -232,7 +230,6 @@ var makeGrid = function() {
 		open : function() {
 
             var previewSelf = this;
-//            console.log(this.$post.id);
             this.$post.load("html/"+this.$item.attr('id')+".html", function() {
                 previewSelf.$post.imagesLoaded(function() {
                     previewSelf.setHeights();
