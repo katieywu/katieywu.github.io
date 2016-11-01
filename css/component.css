@@ -217,9 +217,12 @@
     flex-wrap: wrap;
     width: 50%;
 }
-
 .flexLayoutCol img {
     padding: 0px 10px;
+}
+
+.flexLayoutCol > img {
+    padding: 10px 10px;
 }
 
 /*END OF POST CSS */

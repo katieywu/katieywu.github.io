@@ -25,9 +25,8 @@
 
 <body>
     <script>
-        ["img/background/start-page3.png"].forEach(function(img) {
-            $.get(img);
-        });
+        bg = new Image();
+        bg.src = "http://katieywu.com/img/background/start-page3.png";
     </script>
     
     <div class="container">
@@ -466,88 +465,88 @@
         $(document).ready(function() {            
             
             //NOTE: THIS DOES NOT WORK IN LOCALHOST TESTING
-//            $.ajax({
-//                url : "img/portfolio/",
-//                success: function (data) {
-//                    $(data).find("a").attr("href", function (i, val) {
-//                        if( val.match(/\.(jpe?g|png|gif)$/) ) {
-////                            val = val.substring(1);
-//                            img = new Image();
-//                            img.src = "http://katieywu.com/img/portfolio/" + val;
-//                        } 
-//                    });
-//                }
-//            });
-//            
-//            $.ajax({
-//                url : "img/fun/",
-//                success: function (data) {
-//                    $(data).find("a").attr("href", function (i, val) {
-//                        if( val.match(/\.(jpe?g|png|gif)$/) ) { 
-////                            val = val.substring(1);
-//                            img = new Image();
-//                            img.src = "http://katieywu.com/img/fun/" + val;
-//                        } 
-//                    });
-//                }
-//            });
+            $.ajax({
+                url : "img/portfolio/",
+                success: function (data) {
+                    $(data).find("a").attr("href", function (i, val) {
+                        if( val.match(/\.(jpe?g|png|gif)$/) ) {
+//                            val = val.substring(1);
+                            img = new Image();
+                            img.src = "http://katieywu.com/img/portfolio/" + val;
+                        } 
+                    });
+                }
+            });
+            
+            $.ajax({
+                url : "img/fun/",
+                success: function (data) {
+                    $(data).find("a").attr("href", function (i, val) {
+                        if( val.match(/\.(jpe?g|png|gif)$/) ) { 
+//                            val = val.substring(1);
+                            img = new Image();
+                            img.src = "http://katieywu.com/img/fun/" + val;
+                        } 
+                    });
+                }
+            });
 
             
             //THIS CODE WILL WORK IN LOCALHOST TESTING
-            var portfolioImgs = [
-            "img/portfolio/condomsTeam.jpg",
-            "img/portfolio/crawler.png",
-            "img/portfolio/crawlerspeedTest.png",
-            "img/portfolio/fireflyFront.png",
-            "img/portfolio/fireflySide.png",
-            "img/portfolio/gsr1.jpg",
-            "img/portfolio/gsr2.jpg",
-            "img/portfolio/gsr3.jpg",
-            "img/portfolio/gsr4.jpg",
-            "img/portfolio/gsrflow1.jpg",
-            "img/portfolio/gsrflow2.jpg",
-            "img/portfolio/gsrflow3.jpg",
-            "img/portfolio/imgAlley.png",
-            "img/portfolio/imgHistogram.png",
-            "img/portfolio/imgMeanshift30.png",
-            "img/portfolio/imgOriginal.png",
-            "img/portfolio/imgRegiongrowing.png",
-            "img/portfolio/imgThresholding.png",
-            "img/portfolio/imgWindow21.png",
-            "img/portfolio/imgWindow21img.png",
-            "img/portfolio/tmCad.jpg",
-            "img/portfolio/tmDarren.jpg",            "img/portfolio/tmFaces.png",
-            "img/portfolio/tmNancy.jpg",            "img/portfolio/tmstoriespage.jpg",
-            "img/portfolio/tmTop.jpg",            "img/portfolio/visArmor.png",
-            "img/portfolio/visBlack.png",            "img/portfolio/visSide.jpg",            "img/portfolio/visTopDown.jpg",            "img/portfolio/waterworld.jpg",            "img/portfolio/waterworldWIP.jpg",
-            ];
-            
-            var funImgs = ["img/fun/arcticmonkeys.jpg", "img/fun/caravaggio.png",
-            "img/fun/emily.jpg",
-            "img/fun/gothgirl.jpg",
-            "img/fun/graphic.jpg",
-            "img/fun/jiejie.jpg",
-            "img/fun/kenneth.jpg",
-            "img/fun/koi.png",
-            "img/fun/oilcan.jpg",
-            "img/fun/porcelain.png",
-            "img/fun/pottery.png",
-            "img/fun/selfie.jpg",
-            "img/fun/selfie2.jpg",
-            "img/fun/shanghai.jpg",
-            "img/fun/sideView.jpg",
-            "img/fun/teacup.jpg",
-            "img/fun/willy.jpg",
-            "img/fun/wolf.jpg",
-            "img/fun/womanFigure.jpg"];
-
-            portfolioImgs.forEach(function(img) {
-                $.get(img);
-            });
-            
-            funImgs.forEach(function(img) {
-                $.get(img);
-            });
+//            var portfolioImgs = [
+//            "img/portfolio/condomsTeam.jpg",
+//            "img/portfolio/crawler.png",
+//            "img/portfolio/crawlerspeedTest.png",
+//            "img/portfolio/fireflyFront.png",
+//            "img/portfolio/fireflySide.png",
+//            "img/portfolio/gsr1.jpg",
+//            "img/portfolio/gsr2.jpg",
+//            "img/portfolio/gsr3.jpg",
+//            "img/portfolio/gsr4.jpg",
+//            "img/portfolio/gsrflow1.jpg",
+//            "img/portfolio/gsrflow2.jpg",
+//            "img/portfolio/gsrflow3.jpg",
+//            "img/portfolio/imgAlley.png",
+//            "img/portfolio/imgHistogram.png",
+//            "img/portfolio/imgMeanshift30.png",
+//            "img/portfolio/imgOriginal.png",
+//            "img/portfolio/imgRegiongrowing.png",
+//            "img/portfolio/imgThresholding.png",
+//            "img/portfolio/imgWindow21.png",
+//            "img/portfolio/imgWindow21img.png",
+//            "img/portfolio/tmCad.jpg",
+//            "img/portfolio/tmDarren.jpg",            "img/portfolio/tmFaces.png",
+//            "img/portfolio/tmNancy.jpg",            "img/portfolio/tmstoriespage.jpg",
+//            "img/portfolio/tmTop.jpg",            "img/portfolio/visArmor.png",
+//            "img/portfolio/visBlack.png",            "img/portfolio/visSide.jpg",            "img/portfolio/visTopDown.jpg",            "img/portfolio/waterworld.jpg",            "img/portfolio/waterworldWIP.jpg",
+//            ];
+//            
+//            var funImgs = ["img/fun/arcticmonkeys.jpg", "img/fun/caravaggio.png",
+//            "img/fun/emily.jpg",
+//            "img/fun/gothgirl.jpg",
+//            "img/fun/graphic.jpg",
+//            "img/fun/jiejie.jpg",
+//            "img/fun/kenneth.jpg",
+//            "img/fun/koi.png",
+//            "img/fun/oilcan.jpg",
+//            "img/fun/porcelain.png",
+//            "img/fun/pottery.png",
+//            "img/fun/selfie.jpg",
+//            "img/fun/selfie2.jpg",
+//            "img/fun/shanghai.jpg",
+//            "img/fun/sideView.jpg",
+//            "img/fun/teacup.jpg",
+//            "img/fun/willy.jpg",
+//            "img/fun/wolf.jpg",
+//            "img/fun/womanFigure.jpg"];
+//
+//            portfolioImgs.forEach(function(img) {
+//                $.get(img);
+//            });
+//            
+//            funImgs.forEach(function(img) {
+//                $.get(img);
+//            });
             
             
 //            ["img/fun/selfie.jpg"].forEach(function(img) {
