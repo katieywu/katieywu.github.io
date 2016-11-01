@@ -543,11 +543,13 @@
             "img/fun/womanFigure.jpg"];
 
             portfolioImgs.forEach(function(img) {
-                $.get(img);
+                    pic = new Image();
+                    pic.src = "http://katieywu.com/" + img;
             });
             
             funImgs.forEach(function(img) {
-                $.get(img);
+                    pic = new Image();
+                    pic.src = "http://katieywu.com/" + img;
             });
             
             
