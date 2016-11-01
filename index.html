@@ -467,7 +467,7 @@
             
             //NOTE: THIS DOES NOT WORK IN LOCALHOST TESTING
             $.ajax({
-                url : "img/portfolio/",
+                url : "http://katieywu.com/img/portfolio/",
                 success: function (data) {
                     $(data).find("a").attr("href", function (i, val) {
                         if( val.match(/\.(jpe?g|png|gif)$/) ) {
@@ -480,7 +480,7 @@
             });
             
             $.ajax({
-                url : "img/fun/",
+                url : "http://katieywu.com/img/fun/",
                 success: function (data) {
                     $(data).find("a").attr("href", function (i, val) {
                         if( val.match(/\.(jpe?g|png|gif)$/) ) { 
