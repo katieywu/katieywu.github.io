@@ -365,7 +365,7 @@ h1 span {
     font-size: 34px;
     color: black;
     text-align: center;
-    margin-top: 120px;
+    margin-top: 80px;
     letter-spacing: 1px;
 /*    font-weight: bold;*/
 /*    text-transform: uppercase;*/
@@ -381,13 +381,14 @@ h1 span {
 }
 .about-me p.title {
     color: #a4a4a4;
-    margin: 40px auto;
+    margin: auto;
     width: 60%;
     line-height: 26px;
     letter-spacing: 1;
     font-size: 14px;
     font-weight: 300;
     text-align: center;
+    margin-top: 40px;
 }
 
 .about-me a {
@@ -398,8 +399,9 @@ h1 span {
     text-decoration: underline;
 }
 .about-me h2 {
+    display: inline-block;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 40px;
     font-size: 26px;
     color: black;
     line-height: 1.2;
@@ -408,24 +410,31 @@ h1 span {
     position: relative;
     font-weight: 400;
 }
+
 .about-me p {
     height: auto;
     text-align: center;
     font-size: 14px;
     width: 250px;
-    margin: 30px auto;
+    margin: auto;
     color: #a4a4a4;
     line-height: 26px;
     letter-spacing: 1;
     position: relative;
     font-weight: 300;
+    margin-top: 40px;
+}
+
+.about-me p.story {
+    width: 100%;
 }
 
 .about-me .content .clip-path, .about-me .content img {
     display: block;
-    margin: 54 auto 0;
+    margin: auto;
     width: 240px;
     text-align: center;
+    margin-top: 40px;
 /*    -webkit-clip-path: circle(100px at center); */
 /*    clip-path: circle(100px at center);*/
 }
@@ -434,10 +443,8 @@ h1 span {
     margin-top: 40px;
     width: 300px;
     float: left;
-/*    height: auto;*/
-/*    margin-bottom: 70px;*/
-/*    height: 350px;*/
 }
+
 .about-me .column-one .circle-one {
     font-size: 30pt;
     color: #ef116f;
@@ -578,7 +585,7 @@ h1 span {
     font-size: 34px;
     color: black;
     text-align: center;
-    margin-top: 120px;
+    margin-top: 80px;
     letter-spacing: 1px;
     font-weight: bold;
     text-transform: uppercase;
@@ -595,7 +602,7 @@ h1 span {
 
 #fun {
 /*   margin-top: 280px; */
-    background-color: #e8e8e8;
+    background-color: #ffffff;
 }
 
 /*fake gray background for the "FUN: section */
@@ -615,8 +622,8 @@ h1 span {
     height: auto;
     text-align: center;
     font-size: 14px;
-    width: 500px;
-    margin: 10px auto;
+    width: 50%;
+    margin: 40px auto;
     color: #000000;
     line-height: 26px;
     letter-spacing: 1;
@@ -783,10 +790,10 @@ html { height: 100%; }
 .contact {
     position: relative;
     width: 100%;
-    background: white;
+    background: #e8e8e8;
     z-index: 10;
     overflow: hidden;
-    margin-bottom: 300px;
+    margin-bottom: 220px;
 }
 .contact .content {
     position: relative;
@@ -798,7 +805,7 @@ html { height: 100%; }
     font-size: 34px;
     color: black;
     text-align: center;
-    margin-top: 120px;
+    margin-top: 80px;
     letter-spacing: 1px;
     font-weight: bold;
     text-transform: uppercase;
