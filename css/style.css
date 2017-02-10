@@ -361,14 +361,11 @@ h1 span {
 /*    overflow: auto;*/
 }
 .about-me h1 {
-/*    font-family: 'Lato', sans-serif;*/
     font-size: 34px;
     color: black;
     text-align: center;
     margin-top: 80px;
     letter-spacing: 1px;
-/*    font-weight: bold;*/
-/*    text-transform: uppercase;*/
     line-height: 1.2;
 }
 .about-me hr {
@@ -425,7 +422,7 @@ h1 span {
     margin-top: 40px;
 }
 
-.about-me p.story {
+.about-me p.title story {
     width: 100%;
 }
 
