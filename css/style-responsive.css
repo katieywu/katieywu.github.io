@@ -291,7 +291,7 @@ textarea{
   width:700px;
 }
 
-.about-me p:not(.title){
+.about-me p:not(.title):not(.story){
   width:200px;
 }
 
