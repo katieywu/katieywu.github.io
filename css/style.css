@@ -1,5 +1,10 @@
 @import 'https://fonts.googleapis.com/css?family=Josefin+Sans:600|Lato:300,400';
 
+#video {
+    width: 640px; 
+    height: 360px;
+}
+
 .preloader {
     position: fixed;
     width: 100%;
@@ -35,12 +40,12 @@ h1 {
     font-family: 'Josefin Sans', sans-serif;
     font-style: normal;
     font-variant: normal;
-    font-size: 34px;
+    font-size: 32px;
     color: white;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2px;
-    line-height: 1.2;
+    line-height: 1.4;
 }
 p {
     font-size: 14px;
@@ -126,10 +131,12 @@ h1 span {
     position: absolute;
     text-align: center;
     margin: auto;
+/*
     top: 100;
     left: 0;
     bottom: 0;
     right: 0;
+*/
     width: 700px;
     height: 520px;
 }
