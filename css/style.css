@@ -128,7 +128,7 @@ h1 span {
 /*    height: calc(100% - 60px);*/
 }
 .start-page .content .text {   
-    position: absolute;
+    position: center;
     text-align: center;
     margin: auto;
 /*
