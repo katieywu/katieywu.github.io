@@ -419,7 +419,7 @@ h1 span {
     height: auto;
     text-align: center;
     font-size: 14px;
-    width: 250px;
+    width: 100%;
     margin: auto;
     color: #a4a4a4;
     line-height: 26px;
@@ -429,9 +429,16 @@ h1 span {
     margin-top: 40px;
 }
 
-.about-me p.story {
+ol {
+    text-align: left;
+}
+/*
+
+.about-me .story {
+    
     width: 100%;
 }
+*/
 
 .about-me .content .clip-path, .about-me .content img {
     display: block;
@@ -443,56 +450,24 @@ h1 span {
 /*    clip-path: circle(100px at center);*/
 }
 
-.about-me .column-one {
-    margin-top: 40px;
-    width: 300px;
-    float: left;
-}
-
-.about-me .column-one .circle-one {
-    font-size: 30pt;
-    color: #ef116f;
-    display:flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    position: relative;
-    margin: 0 auto;
-    border: 2px solid #f0f0f0;
-    -moz-border-radius: 100px;
-    -webkit-border-radius: 100px;
-    border-radius: 100px;
-    width: 100px;
-    cursor: pointer;
-    -webkit-transition: all 0.2s ease-in;
-    -moz-transition: all 0.2s ease-in;
-    -ms-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
-}
 .about-me-icon {
     width: 40px;
     height: 40px;
 }
 
-.about-me .column-one .circle-one:hover {
-    border: 2px solid #ef116f;
-}
-.about-me .column-two {
+.about-me .column {
     margin-top: 40px;
     width: 300px;
     float: left;
-/*    margin-bottom: 70px;*/
-/*    height: 350px;*/
 }
-.about-me .column-two .circle-two {
+
+.about-me .column .circle {
     font-size: 30pt;
     color: #ef116f;
     display:flex;
     align-content: center;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     height: 100px;
     position: relative;
     margin: 0 auto;
@@ -508,39 +483,8 @@ h1 span {
     -o-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
 }
-.about-me .column-two .circle-two:hover {
-    border: 2px solid #ef116f;
-}
-.about-me .column-three {
-    margin-top: 40px;
-    width: 300px;
-    float: left;
-/*    margin-bottom: 70px;*/
-/*    height: 350px;*/
-}
-.about-me .column-three .circle-three {
-    font-size: 30pt;
-    color: #ef116f;
-    display:flex;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    height: 100px;
-    position: relative;
-    margin: 0 auto;
-    border: 2px solid #f0f0f0;
-    -moz-border-radius: 100px;
-    -webkit-border-radius: 100px;
-    border-radius: 100px;
-    width: 100px;
-    cursor: pointer;
-    -webkit-transition: all 0.2s ease-in;
-    -moz-transition: all 0.2s ease-in;
-    -ms-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
-}
-.about-me .column-three .circle-three:hover {
+
+.about-me .column .circle:hover {
     border: 2px solid #ef116f;
 }
 

@@ -50,12 +50,12 @@ h1 {
     text-align: justify;
 }
     
-.about-me .column-one, .about-me .column-two{
+.about-me .column, .about-me .column{
   width:300px;
   margin-bottom:20px;
 }
 
- .about-me .content .column-three{
+ .about-me .content #column-three{
   width:300px;
   margin-bottom:70px;
  }
@@ -100,11 +100,11 @@ textarea{
   width:275px;
 }
 
-.contact .content .form .column, .contact .content .form .column-3{
+.contact .content .form .column, .contact .content .form .column{
   width:320px;
 }
 
-.contact .content .form .column-2{
+.contact .content .form .column{
   width:320px;
   padding-left:0;
 }
@@ -323,15 +323,7 @@ textarea{
   letter-spacing:2px;
 }
 
-.about-me .column-one{
-  width:233px;
-}
-
-.about-me .column-two{
-  width:233px;
-}
-
-.about-me .column-three{
+.about-me .column{
   width:233px;
 }
 
@@ -375,11 +367,11 @@ textarea{
   width:275px;
 }
 
-.contact .content .form .column, .contact .content .form .column-3{
+.contact .content .form .column, .contact .content .form .column{
   width:450px;
 }
 
-.contact .content .form .column-2{
+.contact .content .form .column{
   width:450px;
   padding-left:0;
 }
