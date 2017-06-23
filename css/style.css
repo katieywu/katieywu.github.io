@@ -432,13 +432,6 @@ h1 span {
 ol {
     text-align: left;
 }
-/*
-
-.about-me .story {
-    
-    width: 100%;
-}
-*/
 
 .about-me .content .clip-path, .about-me .content img {
     display: block;
@@ -459,6 +452,10 @@ ol {
     margin-top: 40px;
     width: 300px;
     float: left;
+}
+
+.about-me .column p {
+    width: 250px;
 }
 
 .about-me .column .circle {
@@ -566,7 +563,7 @@ ol {
 }
 
 
-.portfolio h2 {
+.portfolio h2, .contact h2 {
     height: auto;
     text-align: center;
     font-size: 14px;
@@ -741,8 +738,14 @@ html { height: 100%; }
     background: #e8e8e8;
     z-index: 10;
     overflow: hidden;
-    margin-bottom: 220px;
+/*    margin-bottom: 152px;*/
 }
+
+.contact-icon {
+    width: 30px;
+    height: 30px;
+}
+
 .contact .content {
     position: relative;
     width: 900px;
@@ -767,47 +770,7 @@ html { height: 100%; }
     width: 106px;
     border: 0;
 }
-.contact .content .form {
-    width: 455px;
-    overflow: hidden;
-    height: auto;
-    float: left;
-}
-.contact .content .form .column {
-    width: 180px;
-    overflow: hidden;
-    height: auto;
-    float: left;
-    letter-spacing: 1px;
-    margin-bottom: 30px;
-}
-.contact .content .form .column-2 {
-    width: 210px;
-    padding-left: 60px;
-    overflow: hidden;
-    height: auto;
-    float: left;
-    letter-spacing: 1px;
-    margin-bottom: 30px;
-}
-.contact .content .form .column-3 {
-    width: 450px;
-    overflow: hidden;
-    height: auto;
-    float: left;
-    letter-spacing: 1px;
-}
-.contact .content .contact-text {
-    width: 405px;
-    overflow: hidden;
-    height: auto;
-    font-weight: 300;
-    float: left;
-    padding-left: 40px;
-    color: black;
-    font-size: 14px;
-    line-height: 26px;
-}
+
 strong {
     font-weight: 700;
 }
@@ -884,15 +847,16 @@ input.submit {
     margin: 0 auto;
     padding-top: 50px;
 }
-.footer .menu-footer {
+.menu-footer {
     width: 80%;
     text-align: center;
-    margin: 0 auto;
+    margin: auto;
+    margin-top: 40px;
     padding-top: 30px;
     overflow: hidden;
     position: relative;
 }
-.footer .menu-footer a {
+.menu-footer a {
     line-height: 46px;
     padding: 10px;
     color: #a4a4a4;
@@ -902,10 +866,26 @@ input.submit {
     -o-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
 }
-.footer .menu-footer a:hover {
-    color: #ef116f;
+.menu-footer a svg:hover #mail,
+.menu-footer a svg:hover #github,
+.menu-footer a svg:hover #linkedin,
+.menu-footer a svg:hover #dribbble,
+.menu-footer a svg:hover #resume{
+    fill: #ef116f;
 }
-.footer .copyright {
+
+.menu-footer a svg #mail,
+.menu-footer a svg #github,
+.menu-footer a svg #linkedin,
+.menu-footer a svg #dribbble,
+.menu-footer a svg #resume{
+  transition: 200ms;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: 200ms;
+  -webkit-transition-timing-function: ease-in-out;
+}
+
+.copyright {
     width: 80%;
     position: relative;
     font-weight: 300;
