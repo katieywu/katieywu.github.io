@@ -1,5 +1,25 @@
 @import 'https://fonts.googleapis.com/css?family=Josefin+Sans:600|Lato:300,400';
 
+@font-face {
+    font-family: "Apercu Pro";
+    src: url("./fonts/Apercu\ Pro.eot"); /* IE9*/
+    src: url("./fonts/Apercu\ Pro.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/Apercu\ Pro.woff2") format("woff2"), /* chrome、firefox */
+    url("./fonts/Apercu\ Pro.woff") format("woff"), /* chrome、firefox */
+    url("./fonts/Apercu\ Pro.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("./fonts/Apercu\ Pro.svg#Apercu Pro") format("svg"); /* iOS 4.1- */
+}
+
+@font-face {
+    font-family: "Apercu Pro Light";
+    src: url("./fonts/Apercu\ Pro\ Light.eot"); /* IE9*/
+    src: url("./fonts/Apercu\ Pro\ Light.eot.?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/Apercu\ Pro\ Light.woff2") format("woff2"), /* chrome、firefox */
+    url("./fonts/Apercu\ Pro\ Light.woff") format("woff"), /* chrome、firefox */
+    url("./fonts/Apercu\ Pro\ Light.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("./fonts/Apercu\ Pro\ Light.svg.svg#Apercu Pro Light") format("svg"); /* iOS 4.1- */
+}
+
 #video {
     width: 640px; 
     height: 360px;
@@ -23,12 +43,13 @@
 }
 html,
 body {
-    font-family: 'Lato', sans-serif;
-    font-size: 15px;
+    font-family: 'Apercu Pro Light', sans-serif;
+    font-size: 12px;
     -webkit-font-smoothing: subpixel-antialiased!important;
     color: black;
-    font-weight: 400;
+    /* font-weight: bold; */
     height: 100%;
+    font-style: normal;
 }
 a {
     text-decoration: none;
@@ -37,7 +58,7 @@ a {
     
 }
 h1 {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Apercu Pro', sans-serif;
     font-style: normal;
     font-variant: normal;
     font-size: 32px;
@@ -58,11 +79,11 @@ h1 span {
     color: #2fa68e;
 }
 ::selection {
-    background: #ef116f;
+    background: #ddb410;
     color: white;
 }
 ::-moz-selection {
-    background: #ef116f;
+    background: #ddb410;
     color: white;
 }
 .container {
@@ -168,8 +189,8 @@ h1 span {
 }
 .start-page .content .text .read-more:hover {
     color: white;
-    background: #ef116f;
-    border: 1px solid #ef116f;
+    background: #ddb410;
+    border: 1px solid #ddb410;
 }
 .start-page .content .arrow-down {
     display: flex;
@@ -220,7 +241,7 @@ h1 span {
     width: 100%;
     height: 70px;
     background: #fff;
-/*    background: #ef116f;*/
+/*    background: #ddb410;*/
     z-index: 1000;
     display: none;
 }
@@ -234,7 +255,7 @@ h1 span {
 }
 .menu-media .menu-content .logo {
     float: left;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Apercu Pro', sans-serif;
     text-transform: uppercase;
     color: #333;
     font-weight: 700;
@@ -283,7 +304,7 @@ h1 span {
 }
 
 .menu-click li:hover {
-    color: #ef116f;
+    color: #ddb410;
 }
 
 /* Menu */
@@ -305,7 +326,7 @@ h1 span {
     margin: 0 auto;
 }
 .menu-content .logo {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Apercu Pro', sans-serif;
     text-transform: uppercase;
     color: #333;
     font-weight: 700;
@@ -328,6 +349,7 @@ h1 span {
     position: relative;
 }
 .menu-content li a {
+    font-family: 'Apercu Pro', sans-serif;
     color: #333;
     font-size: 14px;
     display: block;
@@ -340,10 +362,10 @@ h1 span {
     transition: all 0.2s ease-in;
 }
 .menu-content li.active a {
-    color: #ef116f;
+    color: #ddb410;
 }
 .menu-content li a:hover {
-    color: #ef116f;
+    color: #ddb410;
 }
 
 /* About Me */
@@ -384,7 +406,7 @@ h1 span {
     border: 0;
 }
 .about-me p.title {
-    color: #a4a4a4;
+    color: black;
     margin: auto;
     width: 60%;
     line-height: 26px;
@@ -396,13 +418,14 @@ h1 span {
 }
 
 .about-me a {
-    color: #ef116f;
+    color: #ddb410;
 }
 
 .about-me a:hover {
     text-decoration: underline;
 }
 .about-me h2 {
+    font-family: "Apercu Pro", sans-serif;
     display: inline-block;
     text-align: center;
     margin-top: 40px;
@@ -421,7 +444,7 @@ h1 span {
     font-size: 14px;
     width: 100%;
     margin: auto;
-    color: #a4a4a4;
+    color: black;
     line-height: 26px;
     letter-spacing: 1;
     position: relative;
@@ -460,7 +483,7 @@ ol {
 
 .about-me .column .circle {
     font-size: 30pt;
-    color: #ef116f;
+    color: #ddb410;
     display:flex;
     align-content: center;
     justify-content: center;
@@ -482,7 +505,7 @@ ol {
 }
 
 .about-me .column .circle:hover {
-    border: 2px solid #ef116f;
+    border: 2px solid #ddb410;
 }
 
 /* Portfolio */
@@ -521,9 +544,9 @@ ol {
     letter-spacing: 1px;
 }
 .portfolio .portfolio-margin .read-more:hover, .about-me .read-more:hover {
-    background: #ef116f;
+    background: #ddb410;
     color: white;
-    border: 1px solid #ef116f;
+    border: 1px solid #ddb410;
 }
 
 .portfolio .portfolio-margin h1 {
@@ -790,7 +813,7 @@ input {
     font-weight: 300;
     line-height: 40px;
     padding-left: 15px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Apercu Pro Light', sans-serif;
     font-size: 14px;
     margin-bottom: 10px;
 }
@@ -859,7 +882,7 @@ input.submit {
 .menu-footer a {
     line-height: 46px;
     padding: 10px;
-    color: #a4a4a4;
+    color: black;
     -webkit-transition: all 0.2s ease-in;
     -moz-transition: all 0.2s ease-in;
     -ms-transition: all 0.2s ease-in;
@@ -871,7 +894,7 @@ input.submit {
 .menu-footer a svg:hover #linkedin,
 .menu-footer a svg:hover #dribbble,
 .menu-footer a svg:hover #resume{
-    fill: #ef116f;
+    fill: #ddb410;
 }
 
 .menu-footer a svg #mail,
@@ -894,5 +917,5 @@ input.submit {
     text-align: center;
     font-size: 14px;
     line-height: 36px;
-    color: #a4a4a4;
+    color: black;
 }

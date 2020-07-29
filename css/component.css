@@ -156,8 +156,8 @@
 	color: #656565;
 }
 
-.pink {
-    color: #ef116f;
+.yellow {
+    color: #ddb410;
 }
 
 .post a {
@@ -166,7 +166,7 @@
 	font-weight: 300;
 	font-size: 16px;
 	line-height: 22px;
-    color: #ef116f;
+    color: #ddb410;
 }
 .post a:hover {
     text-decoration: underline;

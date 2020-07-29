@@ -1,12 +1,12 @@
 <h3>Elgoogle Web Crawler</h3>
 <!--<h4>Crawling the web, one page at a time.</h4>-->
-<p><strong class="pink">The Gist:</strong> With a team I wrote a search engine (we called it "Elgoogle") for our Internet & Web Systems (CIS455) final project. It consisted of four interacting parts including a distributed web crawler, indexer, PageRank, and search engine algorithm. I developed the <strong>cloud-based, Mercator-style web crawler</strong>, which downloads pages from the internet and extracts links from them in a breath-first manner by placing the links into a URL frontier (a simple blocking queue), then uploads them to an AWS S3 database for processing. </p>
+<p><strong class="yellow">The Gist:</strong> With a team I wrote a search engine (we called it "Elgoogle") for our Internet & Web Systems (CIS455) final project. It consisted of four interacting parts including a distributed web crawler, indexer, PageRank, and search engine algorithm. I developed the <strong>cloud-based, Mercator-style web crawler</strong>, which downloads pages from the internet and extracts links from them in a breath-first manner by placing the links into a URL frontier (a simple blocking queue), then uploads them to an AWS S3 database for processing. </p>
 
 <p>My biggest breakthroughs were in speed and scalability. The initial crawler I wrote had a speed of <strong>100 pages/min</strong> per node, but after reducing the number of I/Os to the database, using a cache for the robots.txt, and other optimizations, I was able to increase crawling to an average speed of <strong>4800 pages/min per node</strong>, one of the fastest our professor has seen.</p> 
 
 <p>Our goal was to populate a corpus of 500k documents in 10 hours, but we crawled and downloaded <strong>~1.7 mil documents in 5 hours</strong> with my optimizations.</p>
 
-<ul><strong class="pink">Notable features: </strong>
+<ul><strong class="yellow">Notable features: </strong>
     <li>- Distributed across multiple AWS EC2 instances, multithreading, a hand-written HTTP client</li>
     <li>- Adhering to the Robots Exclusion Protocol and storing them with a 2<sup>18</sup> sized LRU cache</li>
     <li>- Fingerprinting for the "content-seen" test using the Rabin 64 hash</li>
@@ -17,15 +17,15 @@
 <img src="img/portfolio/crawler.png" alt="crawler" style="width: 80%"/>
     <figcaption>A screenshot of my EC2 nodes running: each crawling and downloading pages from the Interwebs</figcaption>
 </figure>
-<p><strong class="pink">Tradeoffs:</strong> Persistent state of the crawler. Upon shutdown, each node in the crawler would write either 5000 or 10000 random URLs to the database. Originally the design was to write ALL of the URLs, but it slowed it down significantly. The design choice to use a fixed number of random URLs ensured a good variety of URLs, without sacrificing speed.</p>
+<p><strong class="yellow">Tradeoffs:</strong> Persistent state of the crawler. Upon shutdown, each node in the crawler would write either 5000 or 10000 random URLs to the database. Originally the design was to write ALL of the URLs, but it slowed it down significantly. The design choice to use a fixed number of random URLs ensured a good variety of URLs, without sacrificing speed.</p>
 
-<p><strong class="pink">Testing/Analysis: </strong>Turns out that the number of worker threads had little effect on the speed of the crawler. Though it's worthy to note that I may not have tested the crawler for a long enough time to see any differences. </p>
+<p><strong class="yellow">Testing/Analysis: </strong>Turns out that the number of worker threads had little effect on the speed of the crawler. Though it's worthy to note that I may not have tested the crawler for a long enough time to see any differences. </p>
 
 <figure>
 <img src="img/portfolio/crawlerspeedTest.png" alt="speedTest"/>
     <figcaption>Crawl speed in URLs downloaded per second</figcaption>
 </figure>
 
-<p><strong class="pink">Technologies/skills learned:</strong> Java concurrent programming, cloud computing, Amazon AWS (EC2, S3, DynamoDB), BerkeleyDB, scalability.</p>
+<p><strong class="yellow">Technologies/skills learned:</strong> Java concurrent programming, cloud computing, Amazon AWS (EC2, S3, DynamoDB), BerkeleyDB, scalability.</p>
 
 
